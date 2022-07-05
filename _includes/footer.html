@@ -1,0 +1,28 @@
+<footer>
+    <hr class="d-md-none">
+    <div class="row">
+        <div class="col-md-4 col-sm-12 text-center">
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" {% if page.url==item.link %}class="current"{% endif %}>
+                {{ item.name }}
+            </a> &nbsp;
+            {% endfor %}
+        </div>
+        <div class="col-md-4 col-sm-12 text-center">
+            <div class="pt-3 d-md-none"></div>
+            <p>
+                <a href="https://github.com/sarahmay-harel" target="_blank"><img
+                        src="https://i.imgur.com/A3Hhmgf.png" class="tiny"></a>
+                <a href="https://www.linkedin.com/in/sarahmayharel/" target="_blank"><img
+                        src="https://i.imgur.com/FqqjyxG.png" class="tiny"></a>
+                <a href="https://twitter.com/book_spider" target="_blank"><img src="https://i.imgur.com/mnPU5kM.png"
+                        class="tiny"></a>
+                <a href="mailto:sarahmayharel@gmail.com"><img src="https://i.imgur.com/eAM8FWE.png"
+                        class="tiny"></a>
+            </p>
+        </div>
+        <div class="col-md-4 col-sm-12 text-center">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script>, SarahMay Harel</p>
+        </div>
+    </div>
+</footer>
