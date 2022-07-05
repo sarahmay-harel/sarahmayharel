@@ -2,11 +2,7 @@
     <hr class="d-md-none">
     <div class="row">
         <div class="col-md-4 col-sm-12 text-center">
-            {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" {% if page.url==item.link %}class="current"{% endif %}>
-                {{ item.name }}
-            </a> &nbsp;
-            {% endfor %}
+            <p>&copy; <script>document.write(new Date().getFullYear())</script>, SarahMay Harel</p>
         </div>
         <div class="col-md-4 col-sm-12 text-center">
             <div class="pt-3 d-md-none"></div>
@@ -22,7 +18,11 @@
             </p>
         </div>
         <div class="col-md-4 col-sm-12 text-center">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script>, SarahMay Harel</p>
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" {% if page.url==item.link %}class="current"{% endif %}>
+                {{ item.name | upcase }}
+            </a> &nbsp;
+            {% endfor %}
         </div>
     </div>
 </footer>
