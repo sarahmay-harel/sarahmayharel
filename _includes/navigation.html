@@ -1,9 +1,9 @@
 <nav>
     <div class="row">
-        <div class="col text-left">
+        <div class="col-md-6 col-sm-12 text-left">
             <h1>{{ "SarahMay Harel" | | upcase }}</h1>
         </div>
-        <div class="col text-right navigation">
+        <div class="col-md-6 col-sm-12 text-right navigation">
             {% for item in site.data.navigation %}
             <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
                 {{ item.name | upcase }}
