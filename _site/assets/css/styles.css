@@ -36,4 +36,7 @@ h2 { font-family: 'Bodoni Moda', serif; font-size: 3rem; font-weight: 300; }
 
 footer { padding-top: 5em; padding-bottom: 2em; color: black; font-weight: 600; font-size: .75rem; }
 
+/* Resume */
+.resume-image { max-width: 90%; }
+
 /*# sourceMappingURL=styles.css.map */
