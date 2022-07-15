@@ -1,9 +1,15 @@
-<footer>
-    <hr class="d-md-none">
+<footer class="skillscont">
     <div class="row">
+
         <div class="col-md-4 col-sm-12 text-center">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script>, SarahMay Harel</p>
+            {% for item in site.data.navigation %}
+            <a href="/sarahmayharel{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+                {{ item.name | upcase }}
+            </a> &nbsp;
+            {% endfor %}
         </div>
+
+
         <div class="col-md-4 col-sm-12 text-center">
             <div class="pt-3 d-md-none"></div>
             <p>
@@ -17,12 +23,9 @@
                         class="tiny"></a>
             </p>
         </div>
-        <div class="col-md-4 col-sm-12 text-center">
-            {% for item in site.data.navigation %}
-            <a href="/sarahmayharel{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
-                {{ item.name | upcase }}
-            </a> &nbsp;
-            {% endfor %}
+
+        <div class="col-md-4 col-sm-1 text-center">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script>, SarahMay Harel</p>
         </div>
     </div>
 </footer>
