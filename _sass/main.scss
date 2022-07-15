@@ -17,20 +17,20 @@ body {
     min-height: 100vh;
     flex-direction: column;
     background-color: oldlace;
+    // padding-left: 10rem;
+    // padding-right: 10rem;
+    // @media screen and (max-width: 900px) {
+    //     padding: 3rem;
+    // }
+}
+
+.padrule {
     padding-left: 10rem;
     padding-right: 10rem;
     @media screen and (max-width: 900px) {
         padding: 3rem;
     }
 }
-
-// .padrule {
-//     padding-left: 10rem;
-//     padding-right: 10rem;
-//     @media screen and (max-width: 900px) {
-//         padding: 3rem;
-//     }
-// }
 
 .content {
     flex: 1;
