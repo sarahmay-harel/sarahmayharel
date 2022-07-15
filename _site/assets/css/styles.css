@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; padding-left: 10rem; padding-right: 10rem; margin: 0; display: flex; min-height: 100vh; flex-direction: column; }
+@font-face { font-family: 'yipesregular'; src: url("/Yipes.otf"); font-weight: normal; font-style: normal; }
+
+body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; padding-left: 10rem; padding-right: 10rem; margin: 0; display: flex; min-height: 100vh; flex-direction: column; background-color: oldlace; }
 
 @media screen and (max-width: 900px) { body { padding: 3rem; } }
 
@@ -7,15 +9,15 @@ body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; padding-left: 
 
 a { color: black; text-decoration: none; font-weight: 600; }
 
-a:hover { color: hotpink; text-decoration: none; }
+a:hover { color: darkolivegreen; text-decoration: none; }
 
-.current { color: hotpink; }
+.current { color: darkolivegreen; }
 
 nav a { text-align: center; }
 
 .navigation { align-items: center; }
 
-h1 { font-family: 'Bodoni Moda', serif; font-size: 2.25rem; font-weight: 300; text-decoration: underline; text-decoration-thickness: 2px; }
+h1 { font-family: 'yipesregular', serif; font-size: 2.25rem; font-weight: 300; text-decoration: underline; text-decoration-thickness: 2px; }
 
 h2 { font-family: 'Bodoni Moda', serif; font-size: 3rem; font-weight: 300; padding-top: 3rem; padding-bottom: 2rem; }
 
