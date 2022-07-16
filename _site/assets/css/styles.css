@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Butcherman&family=Eczar:wght@400;500;600;700;800&family=Fruktur&family=IM+Fell+English:ital@0;1&family=Katibeh&family=Kavoon&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik+Wet+Paint&display=swap");
+/*
+font-family: 'Bangers', cursive;
+font-family: 'Bodoni Moda', serif;
+font-family: 'Butcherman', cursive;
+font-family: 'Eczar', serif;
+font-family: 'Fruktur', cursive;
+font-family: 'IM Fell English', serif;
+font-family: 'Katibeh', cursive;
+font-family: 'Kavoon', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik Wet Paint', cursive;
+
+*/
 @font-face { font-family: 'yipesregular'; src: url("/assets/fonts/Yipes.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; margin: 0; display: flex; min-height: 100vh; flex-direction: column; background-color: oldlace; }
@@ -21,9 +35,9 @@ nav a { text-align: center; }
 
 .navigation { align-items: center; }
 
-h1 { font-family: 'yipesregular', serif; font-size: 3em; font-weight: 300; }
+h1 { font-family: 'Fruktur', serif; font-size: 3em; font-weight: 300; letter-spacing: .15rem; }
 
-h2 { font-family: 'yipesregular', serif; font-size: 2.25rem; font-weight: 300; padding-top: 3rem; padding-bottom: 2rem; }
+h2 { font-family: 'Fruktur', serif; font-size: 2.25rem; font-weight: 300; padding-top: 3rem; padding-bottom: 2rem; letter-spacing: .15rem; }
 
 h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1rem; }
 
