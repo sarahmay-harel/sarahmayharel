@@ -44,11 +44,19 @@ a {
 
 a:hover {
     color: darkolivegreen;
-    text-decoration: none;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+}
+
+.title:hover {
+    text-decoration: none!important;
+    font-weight: 600;
 }
 
 .current {
     color: darkolivegreen;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
 }
 
 nav a {
@@ -75,8 +83,8 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     padding-top: 3rem;
     padding-bottom: 1rem;
 }
@@ -121,6 +129,24 @@ h3 {
 
 /*Footer*/
 
+footer a {
+    color: #201901;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #201901;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+}
+
+footer .current {
+    color: #201901;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+}
+
 .tiny {
     max-width: 10%;
 }
@@ -159,11 +185,16 @@ footer {
 }
 
 .project-stack {
-    color: darkgray;
+    color: #535353;
 }
 
 .project-overview li {
     margin: 10px 0;
+}
+
+.disclaimer {
+    font-size: 12px;
+    font-weight: 700;
 }
 
 /* decorations */
