@@ -1,25 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; padding-left: 10rem; padding-right: 10rem; margin: 0; display: flex; min-height: 100vh; flex-direction: column; }
+@font-face { font-family: 'yipesregular'; src: url("/Yipes.otf"); font-weight: normal; font-style: normal; }
 
-@media screen and (max-width: 900px) { body { padding: 3rem; } }
+body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; margin: 0; display: flex; min-height: 100vh; flex-direction: column; background-color: oldlace; }
+
+.padrule { padding-left: 10rem; padding-right: 10rem; }
+
+@media screen and (max-width: 900px) { .padrule { padding: 3rem; } }
 
 .content { flex: 1; }
 
 a { color: black; text-decoration: none; font-weight: 600; }
 
-a:hover { color: hotpink; text-decoration: none; }
+a:hover { color: darkolivegreen; text-decoration: underline wavy; text-underline-offset: 5px; }
 
-.current { color: hotpink; }
+.title:hover { text-decoration: none !important; font-weight: 600; }
+
+.current { color: darkolivegreen; text-decoration: underline wavy; text-underline-offset: 5px; }
 
 nav a { text-align: center; }
 
 .navigation { align-items: center; }
 
-h1 { font-family: 'Bodoni Moda', serif; font-size: 2.25rem; font-weight: 300; text-decoration: underline; text-decoration-thickness: 2px; }
+h1 { font-family: 'yipesregular', serif; font-size: 3em; font-weight: 300; }
 
-h2 { font-family: 'Bodoni Moda', serif; font-size: 3rem; font-weight: 300; padding-top: 3rem; padding-bottom: 2rem; }
+h2 { font-family: 'yipesregular', serif; font-size: 2.25rem; font-weight: 300; padding-top: 3rem; padding-bottom: 2rem; }
 
-h3 { font-size: 2rem; font-weight: 700; padding-top: 3rem; padding-bottom: 1rem; }
+h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1rem; }
+
+.row { width: 100%; }
 
 .headshot { align-items: center; justify-content: center; display: flex; }
 
@@ -27,13 +35,17 @@ h3 { font-size: 2rem; font-weight: 700; padding-top: 3rem; padding-bottom: 1rem;
 
 @media screen and (max-width: 750px) { .circle { max-width: 80%; } }
 
-.skills { margin-top: 3rem; font-weight: 600; line-height: 2rem; }
+.skills { font-weight: 600; line-height: 2rem; }
 
-.experience { margin-top: 3rem; }
-
-.contained { padding-top: 5%; align-content: center; }
+.skillscont { background-color: #556b2f8c; }
 
 /*Footer*/
+footer a { color: #201901; text-decoration: none; font-weight: 600; }
+
+footer a:hover { color: #201901; text-decoration: underline wavy; text-underline-offset: 5px; }
+
+footer .current { color: #201901; text-decoration: underline wavy; text-underline-offset: 5px; }
+
 .tiny { max-width: 10%; }
 
 .no-bullet { list-style-type: none; }
@@ -48,10 +60,31 @@ footer { padding-top: 5em; padding-bottom: 2em; color: black; font-weight: 600; 
 
 .project-info { justify-content: left; align-items: center; display: flex; }
 
-.project-stack { color: darkgray; }
+.project-stack { color: #535353; }
 
 .project-overview li { margin: 10px 0; }
 
-/* Portfolio project gallery */
+.disclaimer { font-size: 12px; font-weight: 700; }
+
+/* decorations */
+.flower2 { position: absolute; top: 0; right: 0; opacity: 50%; z-index: -1; overflow: unset; }
+
+.flower2img { width: 250px; }
+
+.flower { top: 500px; position: absolute; left: -120px; z-index: 1; overflow: unset; transform: rotate(15deg); }
+
+.flowerimg { width: 250px; }
+
+@media screen and (max-width: 900px) { .flowerimg { display: none; } }
+
+.mushrooms { position: absolute; right: 0; top: 60rem; z-index: 1; overflow: unset; }
+
+.mushroomimg { width: 250px; }
+
+@media screen and (max-width: 900px) { .mushroomimg { display: none; } }
+
+.plant { position: absolute; left: 0; opacity: 50%; z-index: -1; overflow: unset; }
+
+.plantimg { max-width: 50%; }
 
 /*# sourceMappingURL=styles.css.map */

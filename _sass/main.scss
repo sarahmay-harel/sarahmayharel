@@ -1,15 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+
+@font-face {
+    font-family: 'yipesregular';
+    src: url('/Yipes.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     padding-top: 3.5rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
     margin: 0;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: oldlace;
+    // padding-left: 10rem;
+    // padding-right: 10rem;
+    // @media screen and (max-width: 900px) {
+    //     padding: 3rem;
+    // }
+}
 
+.padrule {
+    padding-left: 10rem;
+    padding-right: 10rem;
     @media screen and (max-width: 900px) {
         padding: 3rem;
     }
@@ -26,12 +43,20 @@ a {
 }
 
 a:hover {
-    color: hotpink;
-    text-decoration: none;
+    color: darkolivegreen;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+}
+
+.title:hover {
+    text-decoration: none!important;
+    font-weight: 600;
 }
 
 .current {
-    color: hotpink;
+    color: darkolivegreen;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
 }
 
 nav a {
@@ -43,32 +68,30 @@ nav a {
 }
 
 h1 {
-    font-family: 'Bodoni Moda', serif;
-    font-size: 2.25rem;
+    font-family: 'yipesregular', serif;
+    font-size: 3em;
     font-weight: 300;
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
 }
 
 
 h2 {
-    font-family: 'Bodoni Moda', serif;
-    font-size: 3rem;
+    font-family: 'yipesregular', serif;
+    font-size: 2.25rem;
     font-weight: 300;
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
 h3 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     padding-top: 3rem;
     padding-bottom: 1rem;
 }
 
-// .row {
-//     width: 100%;
-// }
+.row {
+    width: 100%;
+}
 
 .headshot {
     align-items: center;
@@ -85,23 +108,44 @@ h3 {
 }
 
 .skills {
-    margin-top: 3rem;
     font-weight: 600;
     line-height: 2rem;
 }
 
-.experience {
-    margin-top: 3rem;
+.skillscont {
+    background-color: #556b2f8c;
 }
 
-.contained {
-    padding-top: 5%;
-    // padding-left: 10%;
-    // padding-right: 10%;
-    align-content: center;
-}
+// .experience {
+//     margin-top: 3rem;
+// }
+
+// .contained {
+//     padding-top: 5%;
+//     // padding-left: 10%;
+//     // padding-right: 10%;
+//     align-content: center;
+// }
 
 /*Footer*/
+
+footer a {
+    color: #201901;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #201901;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+}
+
+footer .current {
+    color: #201901;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+}
 
 .tiny {
     max-width: 10%;
@@ -141,12 +185,74 @@ footer {
 }
 
 .project-stack {
-    color: darkgray;
+    color: #535353;
 }
 
 .project-overview li {
     margin: 10px 0;
 }
 
-/* Portfolio project gallery */
+.disclaimer {
+    font-size: 12px;
+    font-weight: 700;
+}
 
+/* decorations */
+.flower2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 50%;
+    z-index: -1;
+    overflow: unset;
+}
+
+.flower2img {
+    width: 250px;
+}
+
+.flower {
+    top: 500px;
+    position: absolute;
+    left: -120px;
+    // opacity: 50%;
+    z-index: 1;
+    overflow: unset;
+    transform: rotate(15deg);
+}
+
+.flowerimg {
+    width: 250px;
+
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+}
+
+.mushrooms {
+    position: absolute;
+    right: 0;
+    top: 60rem;
+    // opacity: 50%;
+    z-index: 1;
+    overflow: unset;
+}
+
+.mushroomimg {
+    width: 250px;
+    @media screen and (max-width: 900px) {
+        display:none;
+    }
+}
+
+.plant {
+    position: absolute;
+    left: 0;
+    opacity: 50%;
+    z-index: -1;
+    overflow: unset;
+}
+
+.plantimg {
+    max-width: 50%;
+}
