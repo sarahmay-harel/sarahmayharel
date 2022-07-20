@@ -78,6 +78,7 @@ nav {
     padding-left: 3rem!important;
     @media screen and (max-width: 740px) {
         padding-left: 33px;
+        padding-bottom: 3rem;
     }
 }
 
@@ -267,6 +268,7 @@ footer {
 
 .resume-image {
     max-width: 70%;
+    border: 10px solid #A1AA82;
 }
 
 /* Projects */

@@ -34,7 +34,7 @@ a:hover { color: darkolivegreen; text-decoration: underline wavy; text-underline
 
 nav { padding-left: 3rem !important; }
 
-@media screen and (max-width: 740px) { nav { padding-left: 33px; } }
+@media screen and (max-width: 740px) { nav { padding-left: 33px; padding-bottom: 3rem; } }
 
 nav a { text-align: center; }
 
@@ -92,7 +92,7 @@ footer .current { color: #201901; text-decoration: underline wavy; text-underlin
 footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600; font-size: .75rem; margin-top: auto; bottom: 0; background-color: #A1AA82; }
 
 /* Resume */
-.resume-image { max-width: 70%; }
+.resume-image { max-width: 70%; border: 10px solid #A1AA82; }
 
 /* Projects */
 .project-image { max-width: 100%; border-radius: 5%; }
