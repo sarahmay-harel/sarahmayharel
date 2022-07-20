@@ -32,9 +32,11 @@ a:hover { color: darkolivegreen; text-decoration: underline wavy; text-underline
 
 .current { color: darkolivegreen; text-decoration: underline wavy; text-underline-offset: 5px; }
 
-nav a { text-align: center; }
+nav { padding-left: 3rem !important; }
 
-.navigation { align-items: center; }
+@media screen and (max-width: 740px) { nav { padding-left: 33px; } }
+
+nav a { text-align: center; }
 
 h1 { font-family: 'Ibarra Real Nova', serif; font-size: 3em; font-weight: 300; }
 
@@ -46,6 +48,20 @@ h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1re
 
 .intro { padding-top: 3rem; padding-bottom: 10rem; }
 
+.shape { position: relative; }
+
+.custom-shape-divider-top-1658328325 { position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; }
+
+.custom-shape-divider-top-1658328325 svg { position: relative; display: block; width: calc(100% + 1.3px); height: 127px; }
+
+.custom-shape-divider-top-1658328325 .shape-fill { fill: #FDF5E6; }
+
+.custom-shape-divider-top-1658328596 { position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; }
+
+.custom-shape-divider-top-1658328596 svg { position: relative; display: block; width: calc(100% + 1.3px); height: 127px; transform: rotateY(180deg); }
+
+.custom-shape-divider-top-1658328596 .shape-fill { fill: #A1AA82; }
+
 .headshot { align-items: center; justify-content: center; display: flex; }
 
 .circle { border-radius: 50%; max-width: 50%; }
@@ -54,13 +70,13 @@ h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1re
 
 .skills { font-weight: 600; line-height: 2rem; }
 
-.skillscont { background-image: url(/assets/img/green-wave-4.png); background-size: 100%; background-position: 0 20%; background-repeat: no-repeat; padding-top: 10rem; padding-bottom: 10rem; }
+.skillscont { background-image: url(./assets/img/green-wave-4.png); background-size: 100%; background-position: 0 20%; background-repeat: no-repeat; background-color: #A1AA82; padding-top: 10rem; padding-bottom: 10rem; }
 
-@media screen and (max-width: 740px) { .skillscont { background-image: url(/assets/img/green-wave-3.png); background-size: 150%; } }
+@media screen and (max-width: 740px) { .skillscont { background-image: url(./assets/img/green-wave-3.png); background-size: 150%; } }
 
-@media screen and (max-width: 480px) { .skillscont { background-image: url(/assets/img/green-wave-3.png); background-size: 200%; } }
+@media screen and (max-width: 480px) { .skillscont { background-image: url(./assets/img/green-wave-3.png); background-size: 200%; } }
 
-@media screen and (max-width: 360px) { .skillscont { background-image: url(/assets/img/green-wave-3.png); background-size: 300%; } }
+@media screen and (max-width: 360px) { .skillscont { background-image: url(./assets/img/green-wave-3.png); background-size: 300%; } }
 
 /*Footer*/
 footer a { color: #201901; text-decoration: none; font-weight: 600; }

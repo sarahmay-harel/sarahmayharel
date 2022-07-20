@@ -120,6 +120,54 @@ h3 {
     padding-bottom: 10rem;
 }
 
+//wavy shapes
+.shape {
+    position: relative;
+}
+
+//shape 1
+.custom-shape-divider-top-1658328325 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1658328325 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 127px;
+}
+
+.custom-shape-divider-top-1658328325 .shape-fill {
+    fill: #FDF5E6;
+}
+
+//shape 2
+.custom-shape-divider-top-1658328596 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1658328596 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 127px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1658328596 .shape-fill {
+    fill: #A1AA82;
+}
+
 .headshot {
     align-items: center;
     justify-content: center;
@@ -147,7 +195,7 @@ h3 {
     background-size: 100%;
     background-position: 0 20%;
     background-repeat: no-repeat;
-    // background-color: #A1AA82;
+    background-color: #A1AA82;
     padding-top: 10rem;
     padding-bottom: 10rem;
 
