@@ -92,7 +92,7 @@ footer .current { color: #201901; text-decoration: underline wavy; text-underlin
 footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600; font-size: .75rem; margin-top: auto; bottom: 0; background-color: #A1AA82; }
 
 /* Resume */
-.resume-image { max-width: 90%; }
+.resume-image { max-width: 70%; }
 
 /* Projects */
 .project-image { max-width: 100%; border-radius: 5%; }
