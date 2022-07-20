@@ -89,7 +89,7 @@ footer .current { color: #201901; text-decoration: underline wavy; text-underlin
 
 .no-bullet { list-style-type: none; }
 
-footer { padding-top: 5em; padding-bottom: 2em; color: black; font-weight: 600; font-size: .75rem; margin-top: auto; bottom: 0; background-color: #A1AA82; }
+footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600; font-size: .75rem; margin-top: auto; bottom: 0; background-color: #A1AA82; }
 
 /* Resume */
 .resume-image { max-width: 90%; }
