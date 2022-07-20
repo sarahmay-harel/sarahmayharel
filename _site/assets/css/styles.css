@@ -1,4 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Butcherman&family=Eczar:wght@400;500;600;700;800&family=Fruktur&family=IM+Fell+English:ital@0;1&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Katibeh&family=Kavoon&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik+Wet+Paint&display=swap");
+/* fonts
+
+font-family: 'Bangers', cursive;
+font-family: 'Bodoni Moda', serif;
+font-family: 'Butcherman', cursive;
+font-family: 'Eczar', serif;
+font-family: 'Fruktur', cursive;
+font-family: 'Ibarra Real Nova', serif;
+font-family: 'IM Fell English', serif;
+font-family: 'Katibeh', cursive;
+font-family: 'Kavoon', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik Wet Paint', cursive;
+*/
 @font-face { font-family: 'yipesregular'; src: url("/assets/fonts/Yipes.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; margin: 0; display: flex; min-height: 100vh; flex-direction: column; background-color: oldlace; }
@@ -21,13 +36,15 @@ nav a { text-align: center; }
 
 .navigation { align-items: center; }
 
-h1 { font-family: 'yipesregular', serif; font-size: 3em; font-weight: 300; }
+h1 { font-family: 'Ibarra Real Nova', serif; font-size: 3em; font-weight: 300; }
 
-h2 { font-family: 'yipesregular', serif; font-size: 2.25rem; font-weight: 300; padding-top: 3rem; padding-bottom: 2rem; }
+h2 { font-family: 'Ibarra Real Nova', serif; font-size: 2.25rem; font-weight: 300; padding-top: 3rem; padding-bottom: 2rem; }
 
 h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1rem; }
 
 .row { width: 100%; }
+
+.intro { padding-top: 3rem; padding-bottom: 10rem; }
 
 .headshot { align-items: center; justify-content: center; display: flex; }
 
@@ -37,7 +54,13 @@ h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1re
 
 .skills { font-weight: 600; line-height: 2rem; }
 
-.skillscont { background-color: #556b2f8c; }
+.skillscont { background-image: url(/assets/img/green-wave-4.png); background-size: 100%; background-position: 0 20%; background-repeat: no-repeat; padding-top: 10rem; padding-bottom: 10rem; }
+
+@media screen and (max-width: 740px) { .skillscont { background-image: url(/assets/img/green-wave-3.png); background-size: 150%; } }
+
+@media screen and (max-width: 480px) { .skillscont { background-image: url(/assets/img/green-wave-3.png); background-size: 200%; } }
+
+@media screen and (max-width: 360px) { .skillscont { background-image: url(/assets/img/green-wave-3.png); background-size: 300%; } }
 
 /*Footer*/
 footer a { color: #201901; text-decoration: none; font-weight: 600; }
@@ -50,7 +73,7 @@ footer .current { color: #201901; text-decoration: underline wavy; text-underlin
 
 .no-bullet { list-style-type: none; }
 
-footer { padding-top: 5em; padding-bottom: 2em; color: black; font-weight: 600; font-size: .75rem; margin-top: auto; bottom: 0; }
+footer { padding-top: 5em; padding-bottom: 2em; color: black; font-weight: 600; font-size: .75rem; margin-top: auto; bottom: 0; background-color: #A1AA82; }
 
 /* Resume */
 .resume-image { max-width: 90%; }

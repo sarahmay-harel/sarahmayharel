@@ -1,10 +1,12 @@
 <nav>
-    <div class="row padrule">
-        <div class="col-md-6 col-sm-12 text-left">
-            <a href="/sarahmayharel" class="text-left title"><h1 style="font-size: 1.3em">{{ "SarahMay" | upcase }}</h1>
-            <h1 style="font-size: 1.3em;margin-left:80px;"">{{ "Harel" | upcase }}</h1></a>
+    <div class="row pl-5">
+        <div class="col-md-6 col-sm-12 text-center">
+            <!-- <a href="/sarahmayharel" class="text-left title"><h1 style="font-size: 1.3em">{{ "SarahMay" | upcase }}</h1>
+            <h1 style="font-size: 1.3em;margin-left:80px;"">{{ "Harel" | upcase }}</h1></a> -->
+
+            <a href="/sarahmayharel" class="text-center title"><h1 style="font-size: 2em">{{ "SarahMay Harel" }}</h1></a>
         </div>
-        <div class="col-md-6 col-sm-12 text-right navigation">
+        <div class="col-md-6 col-sm-12 text-center navigation">
             {% for item in site.data.navigation %}
             <a href="/sarahmayharel{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
                 {{ item.name | upcase }}
