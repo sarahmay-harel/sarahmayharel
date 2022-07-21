@@ -20,7 +20,7 @@ body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; margin: 0; dis
 
 .padrule { padding-left: 10rem; padding-right: 10rem; }
 
-@media screen and (max-width: 900px) { .padrule { padding: 3rem; } }
+@media screen and (max-width: 900px) { .padrule { padding: 2.5rem; } }
 
 .content { flex: 1; }
 
@@ -36,7 +36,9 @@ nav { padding-left: 3rem !important; }
 
 @media screen and (max-width: 740px) { nav { padding-left: 33px; padding-bottom: 3rem; } }
 
-nav a { text-align: center; }
+@media screen and (max-width: 740px) { nav a { text-align: center !important; } }
+
+@media screen and (max-width: 740px) { .navigation { text-align: center !important; } }
 
 h1 { font-family: 'Ibarra Real Nova', serif; font-size: 3em; font-weight: 300; }
 
