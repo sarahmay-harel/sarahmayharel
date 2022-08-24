@@ -400,6 +400,12 @@ footer {
     margin: 0 auto;
 }
 
+.minimalist2 {
+    max-width: 70%;
+    margin: 0 auto;
+    transform: scaleX(-1)
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -446,4 +452,25 @@ footer {
 .intro-text {
     margin: auto;
     padding-left: 4rem;
+}
+
+.tools {
+    max-width: 100px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 1.1rem;;
+}
+
+.logo img {
+    max-height: 100px;
+}
+
+.logocaption {
+    margin-top: .5rem;
+}
+
+.test {
+    height: 100px;
 }
