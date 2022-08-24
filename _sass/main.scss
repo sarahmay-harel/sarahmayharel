@@ -4,7 +4,9 @@
 //3. Add Bowtie projects
 //4. Get rid of extra images and assets
 //5. Fix projects page on mobile view
-//6. Add links to open project images large view
+//6. Refactor modal script to apply for project images
+//7. Add dark mode
+//8. Add skills: SASS, Bootstrap
 
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Butcherman&family=Eczar:wght@400;500;600;700;800&family=Fruktur&family=IM+Fell+English:ital@0;1&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Katibeh&family=Kavoon&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik+Wet+Paint&display=swap');
 
@@ -48,10 +50,13 @@ body {
 }
 
 .padrule {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
     @media screen and (max-width: 900px) {
         padding: 2.5rem;
+    }
+    @media screen and (max-width: 740px) {
+        padding: 0 2.5rem;
     }
 }
 
@@ -86,7 +91,7 @@ nav {
     padding-left: 3rem!important;
     @media screen and (max-width: 740px) {
         padding-left: 33px;
-        padding-bottom: 3rem;
+        padding-bottom: 0;
     }
 }
 
@@ -122,6 +127,9 @@ h3 {
     font-weight: 600;
     padding-top: 3rem;
     padding-bottom: 1rem;
+    @media screen and (max-width: 740px) {
+        padding-top:1rem;
+    }
 }
 
 .row {
@@ -131,6 +139,9 @@ h3 {
 .intro {
     padding-top: 3rem;
     padding-bottom: 10rem;
+    @media screen and (max-width: 740px) {
+        padding-bottom: 5rem;;
+    }
 }
 
 //wavy shapes
@@ -209,8 +220,8 @@ h3 {
     background-position: 0 20%;
     background-repeat: no-repeat;
     background-color: #A1AA82;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 8em;
+    padding-bottom: 2rem;
 
     @media screen and (max-width: 740px) {
         background-image: url(./assets/img/green-wave-3.png);
@@ -223,6 +234,7 @@ h3 {
     @media screen and (max-width: 360px) {
         background-image: url(./assets/img/green-wave-3.png);
         background-size: 300%;
+
     }
 }
 
@@ -294,6 +306,15 @@ footer {
     justify-content: left;
     align-items: center;
     display: flex;
+    @media screen and (max-width: 740px) {
+     padding-top: 2.5rem;
+    }
+}
+
+.mobile-col {
+    @media screen and (max-width: 740px) {
+        margin-bottom: 1rem;
+       }
 }
 
 .project-stack {
@@ -368,3 +389,47 @@ footer {
 .plantimg {
     max-width: 50%;
 }
+
+.minimalist {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

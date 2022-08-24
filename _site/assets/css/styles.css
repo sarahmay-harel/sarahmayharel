@@ -18,9 +18,11 @@ font-family: 'Rubik Wet Paint', cursive;
 
 body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; margin: 0; display: flex; min-height: 100vh; flex-direction: column; background-color: oldlace; }
 
-.padrule { padding-left: 10rem; padding-right: 10rem; }
+.padrule { padding-left: 12rem; padding-right: 12rem; }
 
 @media screen and (max-width: 900px) { .padrule { padding: 2.5rem; } }
+
+@media screen and (max-width: 740px) { .padrule { padding: 0 2.5rem; } }
 
 .content { flex: 1; }
 
@@ -34,7 +36,7 @@ a:hover { color: darkolivegreen; text-decoration: underline wavy; text-underline
 
 nav { padding-left: 3rem !important; }
 
-@media screen and (max-width: 740px) { nav { padding-left: 33px; padding-bottom: 3rem; } }
+@media screen and (max-width: 740px) { nav { padding-left: 33px; padding-bottom: 0; } }
 
 @media screen and (max-width: 740px) { nav a { text-align: center !important; } }
 
@@ -46,9 +48,13 @@ h2 { font-family: 'Ibarra Real Nova', serif; font-size: 2.25rem; font-weight: 30
 
 h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1rem; }
 
+@media screen and (max-width: 740px) { h3 { padding-top: 1rem; } }
+
 .row { width: 100%; }
 
 .intro { padding-top: 3rem; padding-bottom: 10rem; }
+
+@media screen and (max-width: 740px) { .intro { padding-bottom: 5rem; } }
 
 .shape { position: relative; }
 
@@ -72,7 +78,7 @@ h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1re
 
 .skills { font-weight: 600; line-height: 2rem; }
 
-.skillscont { background-image: url(./assets/img/green-wave-4.png); background-size: 100%; background-position: 0 20%; background-repeat: no-repeat; background-color: #A1AA82; padding-top: 10rem; padding-bottom: 10rem; }
+.skillscont { background-image: url(./assets/img/green-wave-4.png); background-size: 100%; background-position: 0 20%; background-repeat: no-repeat; background-color: #A1AA82; padding-top: 8em; padding-bottom: 2rem; }
 
 @media screen and (max-width: 740px) { .skillscont { background-image: url(./assets/img/green-wave-3.png); background-size: 150%; } }
 
@@ -101,6 +107,10 @@ footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600;
 
 .project-info { justify-content: left; align-items: center; display: flex; }
 
+@media screen and (max-width: 740px) { .project-info { padding-top: 2.5rem; } }
+
+@media screen and (max-width: 740px) { .mobile-col { margin-bottom: 1rem; } }
+
 .project-stack { color: #535353; }
 
 .project-overview li { margin: 10px 0; }
@@ -127,5 +137,18 @@ footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600;
 .plant { position: absolute; left: 0; opacity: 50%; z-index: -1; overflow: unset; }
 
 .plantimg { max-width: 50%; }
+
+.minimalist { max-width: 70%; margin: 0 auto; }
+
+/* The Modal (background) */
+.modal { display: none; /* Hidden by default */ position: fixed; /* Stay in place */ z-index: 1; /* Sit on top */ padding-top: 100px; /* Location of the box */ left: 0; top: 0; width: 100%; /* Full width */ height: 100%; /* Full height */ overflow: auto; /* Enable scroll if needed */ background-color: black; /* Fallback color */ background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */ }
+
+/* Modal Content */
+.modal-content { background-color: #fefefe; margin: auto; padding: 20px; border: 1px solid #888; width: 80%; }
+
+/* The Close Button */
+.close { color: #aaaaaa; float: right; font-size: 28px; font-weight: bold; }
+
+.close:hover, .close:focus { color: #000; text-decoration: none; cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map */
