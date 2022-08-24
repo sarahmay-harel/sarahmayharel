@@ -202,15 +202,19 @@ h3 {
 .circle {
     // border: 10px solid #cbb3148c;
     border-radius: 50%;
-    max-width: 50%;
-    @media screen and (max-width: 750px) {
-        max-width: 80%;
+    max-width: 100%;
+    @media screen and (max-width: 900px) {
+        max-width: 70%;
+    }
+    @media screen and (min-width: 1300px) {
+        max-width: 70%;
     }
 }
 
 .skills {
     font-weight: 600;
     line-height: 2rem;
+    white-space: nowrap;
 }
 
 
@@ -433,3 +437,12 @@ footer {
     text-decoration: none;
     cursor: pointer;
   }
+
+
+
+/* Contact */
+
+.intro-text {
+    margin: auto;
+    padding-left: 4rem;
+}

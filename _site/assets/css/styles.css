@@ -72,11 +72,13 @@ h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1re
 
 .headshot { align-items: center; justify-content: center; display: flex; }
 
-.circle { border-radius: 50%; max-width: 50%; }
+.circle { border-radius: 50%; max-width: 100%; }
 
-@media screen and (max-width: 750px) { .circle { max-width: 80%; } }
+@media screen and (max-width: 900px) { .circle { max-width: 70%; } }
 
-.skills { font-weight: 600; line-height: 2rem; }
+@media screen and (min-width: 1300px) { .circle { max-width: 70%; } }
+
+.skills { font-weight: 600; line-height: 2rem; white-space: nowrap; }
 
 .skillscont { background-image: url(./assets/img/green-wave-4.png); background-size: 100%; background-position: 0 20%; background-repeat: no-repeat; background-color: #A1AA82; padding-top: 8em; padding-bottom: 2rem; }
 
@@ -150,5 +152,8 @@ footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600;
 .close { color: #aaaaaa; float: right; font-size: 28px; font-weight: bold; }
 
 .close:hover, .close:focus { color: #000; text-decoration: none; cursor: pointer; }
+
+/* Contact */
+.intro-text { margin: auto; padding-left: 4rem; }
 
 /*# sourceMappingURL=styles.css.map */
