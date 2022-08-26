@@ -58,6 +58,8 @@ h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1re
 
 .shape { position: relative; }
 
+@media screen and (max-width: 740px) { .shape-bottom { padding-bottom: 2rem; } }
+
 .custom-shape-divider-top-1658328325 { position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; }
 
 .custom-shape-divider-top-1658328325 svg { position: relative; display: block; width: calc(100% + 1.3px); height: 127px; }
@@ -78,7 +80,7 @@ h3 { font-size: 1.5rem; font-weight: 600; padding-top: 3rem; padding-bottom: 1re
 
 @media screen and (min-width: 1300px) { .circle { max-width: 70%; } }
 
-.skills { font-weight: 600; line-height: 2rem; white-space: nowrap; }
+.skills { font-weight: 400; line-height: 2rem; }
 
 .skillscont { background-image: url(./assets/img/green-wave-4.png); background-size: 100%; background-position: 0 20%; background-repeat: no-repeat; background-color: #A1AA82; padding-top: 8em; padding-bottom: 2rem; }
 
@@ -158,6 +160,7 @@ footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600;
 /* Contact */
 .intro-text { margin: auto; padding-left: 4rem; }
 
+/* Tools */
 .tools { max-width: 100px; }
 
 .logo { text-align: center; margin-bottom: 1.1rem; }
@@ -166,6 +169,12 @@ footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600;
 
 .logocaption { margin-top: .5rem; }
 
-.test { height: 100px; }
+.short-logo { height: 100px; transform: translateY(30%); }
+
+.grid { display: grid; grid-template-columns: auto auto auto auto auto; }
+
+@media screen and (max-width: 740px) { .grid { display: none; } }
+
+.logo-height { height: 100px; }
 
 /*# sourceMappingURL=styles.css.map */
