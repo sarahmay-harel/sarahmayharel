@@ -160,6 +160,8 @@ footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600;
 /* Contact */
 .intro-text { margin: auto; padding-left: 4rem; }
 
+@media screen and (max-width: 740px) { .intro-text { padding-left: 0; } }
+
 /* Tools */
 .tools { max-width: 100px; }
 
