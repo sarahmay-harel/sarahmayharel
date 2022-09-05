@@ -54,6 +54,60 @@ body {
     // }
 }
 
+.dark-mode {
+    background-color: #504032;
+    color: oldlace;
+    p {
+        color: oldlace;
+    }
+    hr {
+        border-top-color: oldlace;
+    }
+    a {
+        color: oldlace;
+    }
+    a:hover {
+        color: #CD7A4B;
+    }
+    .current {
+        color: #CD7A4B;
+    }
+    footer a {
+        color: black;
+    }
+    footer a:hover {
+        color: black;
+    }
+    footer .current {
+        color: black;
+    }
+    footer p {
+        color: black;
+    }
+}
+
+button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 75px;
+    background-color: darkolivegreen;
+    border: none;
+    color: white;
+    padding: 15px 32px 15px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20%;
+    z-index: 1;
+}
+
+button:hover {
+    background: #3f5b0e;
+    color: oldlace;
+    }
+
 .padrule {
     padding-left: 12rem;
     padding-right: 12rem;
@@ -179,6 +233,10 @@ h3 {
 
 .custom-shape-divider-top-1658328325 .shape-fill {
     fill: #FDF5E6;
+}
+
+.dark-mode .custom-shape-divider-top-1658328325 .shape-fill {
+    fill: #504032;
 }
 
 //shape 2
