@@ -18,6 +18,10 @@
 // Change tech logos to white in dark mode
 // Try navy/night sky color palatte for dark mode
 
+// Color Ideas
+// Mauve #aa8297
+// Deep brown #372a00
+
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Butcherman&family=Eczar:wght@400;500;600;700;800&family=Fruktur&family=IM+Fell+English:ital@0;1&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Katibeh&family=Kavoon&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik+Wet+Paint&display=swap');
 
 /* fonts
@@ -60,7 +64,7 @@ body {
 }
 
 .dark-mode {
-    background-color: #504032;
+    background-color: #05263c;
     color: oldlace;
     p {
         color: oldlace;
@@ -77,18 +81,21 @@ body {
     .current {
         color: #CD7A4B;
     }
-    footer a {
-        color: black;
+    footer {
+        background-color: black;
     }
-    footer a:hover {
-        color: black;
-    }
-    footer .current {
-        color: black;
-    }
-    footer p {
-        color: black;
-    }
+}
+
+.minimalist .hide {
+    display: none;
+}
+
+.dark-mode .minimalist .hide {
+    display: block;
+}
+
+.stars {
+    filter: grayscale(1);
 }
 
 button {
@@ -241,7 +248,7 @@ h3 {
 }
 
 .dark-mode .custom-shape-divider-top-1658328325 .shape-fill {
-    fill: #504032;
+    fill: #05263c;
 }
 
 //shape 2
@@ -264,6 +271,10 @@ h3 {
 
 .custom-shape-divider-top-1658328596 .shape-fill {
     fill: #A1AA82;
+}
+
+.dark-mode  .custom-shape-divider-top-1658328596 .shape-fill {
+    fill: #000;
 }
 
 .headshot {
@@ -315,6 +326,10 @@ h3 {
     }
 }
 
+.dark-mode .skillscont {
+    background-color: black;
+}
+
 // .experience {
 //     margin-top: 3rem;
 // }
@@ -348,6 +363,10 @@ footer .current {
 
 .tiny {
     max-width: 10%;
+}
+
+.dark-mode .tiny {
+    filter: contrast(0);
 }
 
 .no-bullet {
