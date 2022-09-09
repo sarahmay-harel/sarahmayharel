@@ -1,13 +1,14 @@
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-}
+// Old dark mode button - doesn't apply across page journeys
+// function myFunction() {
+//     var element = document.body;
+//     element.classList.toggle("dark-mode");
+// }
 
 let checkbox = document.getElementById("moonButton");
 let body = document.getElementById('body')
 
 checkbox.addEventListener('change', function () {
-    localStorage.setItem('test', this.checked);
+    localStorage.setItem('dark-mode', this.checked);
     if (this.checked) {
         body.classList.add('dark-mode')
     } else {
@@ -20,3 +21,12 @@ if(localStorage.getItem('moonButton')) {
 }
 
 localStorage.setItem('myCat', 'Tom');
+
+
+//Testing localStorage (can be deleted later)
+const button = document.getElementById('moonButton');
+
+button.addEventListener('click', function handleClick() {
+  console.log('element clicked 2');
+  localStorage.setItem('moonButton', 'clicked')
+});

@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/potted-plant-emoji-favicon.png">
     <script src="https://kit.fontawesome.com/2d47902197.js" crossorigin="anonymous"></script>
-    <script src="assets/script.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body id="body">
     {% include navigation.html %}
-    <button id="moonButton" onclick="myFunction()"><i class="fa-solid fa-moon" style="font-size:28px"></i></button>
+    <button><input type="checkbox" id="moonButton" onclick="myFunction()"><i class="fa-solid fa-moon" style="font-size:28px"></i></button>
     <div class="content">
     {{ content }}
     </div>
@@ -32,5 +31,6 @@
   element.classList.toggle("dark-mode");
 }
     </script> -->
+    <script src="assets/script.js" crossorigin="anonymous"></script>
   </body>
 </html>
