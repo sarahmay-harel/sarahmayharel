@@ -1,4 +1,5 @@
 //TODO
+// Fix tools and technologies (appearing at 753px screen size)
 // FIX DARK MODE especially checkbox behavior. If box is checked its saved in localStorage, but doesn't stay checked-looking for user
 // Update header/nav padding (see Projects page)
 // Link skills to Projects
@@ -15,7 +16,7 @@
 // Change projects to have "see more"
 // Fix plant pot icon for PC/android devices?
 // Accessibility audit - especially with dark mode colors
-// Change leaf png to white for dark mode
+// Change leaf png to white for dark mode - use OPACITY for show/hide leaf vs stars for dark mode
 // Change tech logos to white in dark mode
 // Try navy/night sky color palatte for dark mode
 
@@ -93,6 +94,15 @@ body {
 
 .dark-mode .minimalist .hide {
     display: block;
+}
+
+.dark-mode-checkbox {
+    opacity: 0;
+    position: absolute;
+    width: 75px;
+    height: 60px;
+    bottom: 2px;
+    right: 2px;
 }
 
 .stars {

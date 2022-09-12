@@ -16,17 +16,19 @@ checkbox.addEventListener('change', function () {
     }
 });
 
-if(localStorage.getItem('moonButton')) {
-    body.classList.add('dark-mode');
-}
+// if(localStorage.getItem('moonButton')) {
+//     body.classList.add('dark-mode');
+// }
 
-localStorage.setItem('myCat', 'Tom');
+
 
 
 //Testing localStorage (can be deleted later)
-const button = document.getElementById('moonButton');
+// const button = document.getElementById('moonButton');
 
-button.addEventListener('click', function handleClick() {
-  console.log('element clicked 2');
-  localStorage.setItem('moonButton', 'clicked')
-});
+// button.addEventListener('click', function handleClick() {
+//   console.log('element clicked 2');
+//   localStorage.setItem('moonButton', 'clicked')
+// });
+
+// localStorage.setItem('myCat', 'Tom');

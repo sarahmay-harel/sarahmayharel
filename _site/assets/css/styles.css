@@ -36,6 +36,8 @@ body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; margin: 0; dis
 
 .dark-mode .minimalist .hide { display: block; }
 
+.dark-mode-checkbox { opacity: 0; position: absolute; width: 75px; height: 60px; bottom: 2px; right: 2px; }
+
 .stars { filter: grayscale(1); }
 
 button { position: fixed; bottom: 50px; right: 50px; width: 75px; background-color: darkolivegreen; border: none; color: white; padding: 15px 32px 15px 28px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 20%; z-index: 1; }
