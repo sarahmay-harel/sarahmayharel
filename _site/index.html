@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/potted-plant-emoji-favicon.png">
     <script src="https://kit.fontawesome.com/2d47902197.js" crossorigin="anonymous"></script>
   </head>
-  <body id="body">
+  <body id="bodyID">
     <nav>
     <div class="row">
         <div class="col-md-6 col-sm-12">
@@ -40,7 +40,7 @@
         </div>
     </div>
 </nav>
-    <button><input class="dark-mode-checkbox" type="checkbox" id="moonButton" onclick="myFunction()"><i class="fa-solid fa-moon" style="font-size:28px"></i></button>
+    <button><input class="dark-mode-checkbox" type="checkbox" id="moonButton"><i class="fa-solid fa-moon" style="font-size:28px"></i></button>
     <div class="content">
     <!-- <div class="flower2">
     <img src="./assets/img/flower 2.1.png" class="flower2img">
@@ -106,10 +106,14 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="col-md-6 col-sm-12 text-center"><img src="https://i.imgur.com/mhGjsHt.png"
-                class="d-none d-md-block d-lg-block minimalist"></div> -->
-        <div class="col-md-6 col-sm-12 text-center"><img src="assets/img/—Pngtree—sparkling stars shiny sparks yellow_6320234.png"
-                class="d-none d-md-block d-lg-block minimalist hide stars"></div>
+        <div class="col-md-6 col-sm-12 text-center" id="imageCol">
+            <img src="https://i.imgur.com/mhGjsHt.png"
+            id="leafJs"
+            class="d-none d-md-block d-lg-block minimalist leaf">
+            <img src="assets/img/—Pngtree—sparkling stars shiny sparks yellow_6320234.png"
+            id="starsJs"
+            class="d-none d-md-block d-lg-block minimalist stars">
+            </div>
     </div>
 </div>
 
@@ -464,13 +468,6 @@
     </div>
 </footer>
 
-
-    <!-- <script>
-      function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-    </script> -->
     <script src="assets/script.js" crossorigin="anonymous"></script>
   </body>
 </html>
