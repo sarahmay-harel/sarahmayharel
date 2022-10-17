@@ -617,3 +617,16 @@ footer {
 .logo-height {
     height: 100px;
 }
+
+.dark-mode .leaves-emoji {
+    display: none;
+}
+
+.moon-emoji {
+    display: none;
+}
+
+.dark-mode .moon-emoji {
+    display: inline;
+}
+

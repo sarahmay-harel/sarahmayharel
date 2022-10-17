@@ -217,4 +217,10 @@ footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600;
 
 .logo-height { height: 100px; }
 
+.dark-mode .leaves-emoji { display: none; }
+
+.moon-emoji { display: none; }
+
+.dark-mode .moon-emoji { display: inline; }
+
 /*# sourceMappingURL=styles.css.map */
