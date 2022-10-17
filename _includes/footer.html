@@ -3,7 +3,7 @@
 
         <div class="col-md-4 col-sm-12 text-center">
             {% for item in site.data.navigation %}
-            <a href="/sarahmayharel{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+            <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
                 {{ item.name | upcase }}
             </a> &nbsp;
             {% endfor %}
