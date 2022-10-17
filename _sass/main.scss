@@ -66,7 +66,7 @@ body {
 }
 
 .dark-mode {
-    background-color: #05263c;
+    background-color: #05263c; //#251d48
     color: oldlace;
     p {
         color: oldlace;
@@ -78,10 +78,10 @@ body {
         color: oldlace;
     }
     a:hover {
-        color: #CD7A4B;
+        color: #B2AAE4 ; //#a97acc
     }
     .current {
-        color: #CD7A4B;
+        color: #B2AAE4 ;
     }
     footer {
         background-color: black;
@@ -95,6 +95,14 @@ body {
     height: 60px;
     bottom: 2px;
     right: 2px;
+}
+
+.dark-mode button {
+    background-color: #7768ce!important;
+}
+
+.dark-mode button:hover {
+    background-color: #B2AAE4!important;
 }
 
 button {
@@ -390,6 +398,10 @@ footer {
     border: 10px solid #A1AA82;
 }
 
+.dark-mode .resume-image {
+    border: 10px solid #B2AAE4;
+}
+
 /* Projects */
 
 .project-image {
@@ -503,8 +515,14 @@ footer {
 }
 
 .dark-mode .leaf {
-    opacity: 0;
+    filter: brightness(0) invert(1);
 }
+
+
+.dark-mode .minimalist2 {
+    filter: brightness(0) invert(1);
+}
+
 
 .stars {
     filter: grayscale(1);
@@ -573,6 +591,10 @@ footer {
 
 .logo img {
     max-height: 100px;
+}
+
+.dark-mode .darklogo {
+    filter: contrast(0);
 }
 
 .logocaption {

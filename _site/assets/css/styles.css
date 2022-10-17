@@ -26,13 +26,17 @@ body { font-family: 'Open Sans', sans-serif; padding-top: 3.5rem; margin: 0; dis
 
 .dark-mode a { color: oldlace; }
 
-.dark-mode a:hover { color: #CD7A4B; }
+.dark-mode a:hover { color: #B2AAE4; }
 
-.dark-mode .current { color: #CD7A4B; }
+.dark-mode .current { color: #B2AAE4; }
 
 .dark-mode footer { background-color: black; }
 
 .dark-mode-checkbox { opacity: 0; position: absolute; width: 75px; height: 60px; bottom: 2px; right: 2px; }
+
+.dark-mode button { background-color: #7768ce !important; }
+
+.dark-mode button:hover { background-color: #B2AAE4 !important; }
 
 button { position: fixed; bottom: 50px; right: 50px; width: 75px; background-color: darkolivegreen; border: none; color: white; padding: 15px 32px 15px 28px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 20%; z-index: 1; }
 
@@ -128,6 +132,8 @@ footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600;
 /* Resume */
 .resume-image { max-width: 70%; border: 10px solid #A1AA82; }
 
+.dark-mode .resume-image { border: 10px solid #B2AAE4; }
+
 /* Projects */
 .project-image { max-width: 100%; border-radius: 5%; }
 
@@ -170,7 +176,9 @@ footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600;
 
 .minimalist .leaf { opacity: 100%; }
 
-.dark-mode .leaf { opacity: 0; }
+.dark-mode .leaf { filter: brightness(0) invert(1); }
+
+.dark-mode .minimalist2 { filter: brightness(0) invert(1); }
 
 .stars { filter: grayscale(1); }
 
@@ -196,6 +204,8 @@ footer { padding-top: 15em; padding-bottom: 2em; color: black; font-weight: 600;
 .logo { text-align: center; margin-bottom: 1.1rem; }
 
 .logo img { max-height: 100px; }
+
+.dark-mode .darklogo { filter: contrast(0); }
 
 .logocaption { margin-top: .5rem; }
 
