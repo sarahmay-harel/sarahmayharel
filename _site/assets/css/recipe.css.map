@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "recipe.css",
+	"sources": [
+		"recipe.scss",
+		"_sass/recipe.scss"
+	],
+	"sourcesContent": [
+		"@import \"recipe\";",
+		".recipe-image {\n    border-radius: 4rem\n}\n\nh2 {\n    padding: 1rem 0;\n}"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,aAAa,CAAC,EACV,aAAa,EAAE,IACnB,GAAC;;AAED,AAAA,EAAE,CAAC,EACC,OAAO,EAAE,MAAM,GAClB"
+}

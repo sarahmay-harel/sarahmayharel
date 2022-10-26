@@ -1,0 +1,17 @@
+<nav>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <!-- <a href="/sarahmayharel" class="text-left title"><h1 style="font-size: 1.3em">{{ "SarahMay" | upcase }}</h1>
+            <h1 style="font-size: 1.3em;margin-left:80px;"">{{ "Harel" | upcase }}</h1></a> -->
+
+            <a href="/" class="title"><h1 style="font-size: 2em">{{ "Sleazy T Greezy" }} <span class="leaves-emoji">&#127811;</span><span class="moon-emoji">&#127769;</span></h1></a>
+        </div>
+        <div class="col-md-6 col-sm-12 navigation text-right">
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+                {{ item.name | upcase }}
+            </a> &nbsp;
+            {% endfor %}
+        </div>
+    </div>
+</nav>
