@@ -1,5 +1,31 @@
+.recipe-pad {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+@media (max-width: 1015px) {
+    .recipe-pad {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
 .recipe-image {
-    border-radius: 4rem
+    border-radius: 4rem;
+    max-width: 25rem;
+}
+
+@media (max-width: 1015px) {
+    .recipe-image {
+        max-width: 15rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .recipe-image {
+        max-width: 100%;
+    }
 }
 
 h2 {

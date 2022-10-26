@@ -7,8 +7,8 @@
 	],
 	"sourcesContent": [
 		"@import \"recipe\";",
-		".recipe-image {\n    border-radius: 4rem\n}\n\nh2 {\n    padding: 1rem 0;\n}"
+		".recipe-pad {\n    padding-left: 6rem;\n    padding-right: 6rem;\n}\n\n@media (max-width: 1015px) {\n    .recipe-pad {\n        padding-left: 2rem;\n        padding-right: 2rem;\n    }\n}\n\n.recipe-image {\n    border-radius: 4rem;\n    max-width: 25rem;\n}\n\n@media (max-width: 1015px) {\n    .recipe-image {\n        max-width: 15rem;\n    }\n}\n\n\n@media (max-width: 768px) {\n    .recipe-image {\n        max-width: 100%;\n    }\n}\n\nh2 {\n    padding: 1rem 0;\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,aAAa,CAAC,EACV,aAAa,EAAE,IACnB,GAAC;;AAED,AAAA,EAAE,CAAC,EACC,OAAO,EAAE,MAAM,GAClB"
+	"mappings": "ACAA,AAAA,WAAW,CAAC,EACR,YAAY,EAAE,IAAI,EAClB,aAAa,EAAE,IAAI,GACtB;;AAED,MAAM,oBACF,GAAA,AAAA,WAAW,CAAC,EACR,YAAY,EAAE,IAAI,EAClB,aAAa,EAAE,IAAI,GACtB,EAAA;;AAGL,AAAA,aAAa,CAAC,EACV,aAAa,EAAE,IAAI,EACnB,SAAS,EAAE,KAAK,GACnB;;AAED,MAAM,oBACF,GAAA,AAAA,aAAa,CAAC,EACV,SAAS,EAAE,KAAK,GACnB,EAAA;;AAIL,MAAM,mBACF,GAAA,AAAA,aAAa,CAAC,EACV,SAAS,EAAE,IAAI,GAClB,EAAA;;AAGL,AAAA,EAAE,CAAC,EACC,OAAO,EAAE,MAAM,GAClB"
 }
