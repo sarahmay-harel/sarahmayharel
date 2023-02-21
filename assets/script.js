@@ -1,9 +1,3 @@
-// Old dark mode button - doesn't apply across page journeys
-// function myFunction() {
-//     var element = document.body;
-//     element.classList.toggle("dark-mode");
-// }
-
 let checkbox = document.getElementById("moonButton");
 let body = document.getElementById('bodyID')
 
