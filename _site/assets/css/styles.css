@@ -49,6 +49,9 @@ body {
 .dark-mode .current {
   color: #B2AAE4;
 }
+.dark-mode .hello {
+  background-image: linear-gradient(to bottom, #05263c, #1b1e21, #000);
+}
 .dark-mode footer {
   background-color: black;
 }
@@ -171,6 +174,7 @@ h2 {
 }
 
 h3 {
+  font-family: "Ibarra Real Nova", serif;
   font-size: 1.5rem;
   font-weight: 600;
   padding-top: 3rem;
@@ -184,6 +188,26 @@ h3 {
 
 .row {
   width: 100%;
+}
+
+.hello {
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #fdf5e6, #fcb9bc, #a1aa82);
+}
+.hello h2 {
+  padding-bottom: 0;
+  font-size: 5.5rem;
+  font-weight: 900;
+}
+.hello h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding-top: 1rem;
+  font-size: 2.5rem;
+  color: oldlace;
 }
 
 .intro {
@@ -470,17 +494,26 @@ footer {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
 }
 
 /* Modal Content */

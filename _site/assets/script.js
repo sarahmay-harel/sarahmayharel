@@ -1,9 +1,3 @@
-// Old dark mode button - doesn't apply across page journeys
-// function myFunction() {
-//     var element = document.body;
-//     element.classList.toggle("dark-mode");
-// }
-
 let checkbox = document.getElementById("moonButton");
 let body = document.getElementById('bodyID')
 
@@ -30,6 +24,21 @@ if (testingLocalStorage != 'false') {
 } else {
     console.log('buffy');
 }
+
+
+//Typing animation from typeitjs.com
+new TypeIt("#typed", {
+    speed: 95,
+    deleteSpeed: 85,
+    loop: true,
+  })
+  .type("Front End Web Developer")
+  .delete(23, {instant: false})
+  .type("Shopify Developer")
+  .delete(17, {instant: false})
+  .type("UI Developer")
+  .delete(12, {instant: false})
+  .go();
 
 
 

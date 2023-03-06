@@ -63,21 +63,32 @@ body {
 .dark-mode {
     background-color: #05263c; //#251d48
     color: oldlace;
+
     p {
         color: oldlace;
     }
+
     hr {
         border-top-color: oldlace;
     }
+
     a {
         color: oldlace;
     }
+
     a:hover {
-        color: #B2AAE4 ; //#a97acc
+        color: #B2AAE4; //#a97acc
     }
+
     .current {
-        color: #B2AAE4 ;
+        color: #B2AAE4;
     }
+
+    .hello {
+        background-image: linear-gradient(to bottom, #05263c, #1b1e21, #000);
+
+    }
+
     footer {
         background-color: black;
     }
@@ -93,11 +104,11 @@ body {
 }
 
 .dark-mode button {
-    background-color: #7768ce!important;
+    background-color: #7768ce !important;
 }
 
 .dark-mode button:hover {
-    background-color: #B2AAE4!important;
+    background-color: #B2AAE4 !important;
 }
 
 button {
@@ -120,14 +131,16 @@ button {
 button:hover {
     background: #3f5b0e;
     color: oldlace;
-    }
+}
 
 .padrule {
     padding-left: 12rem;
     padding-right: 12rem;
+
     @media screen and (max-width: 900px) {
         padding: 2.5rem;
     }
+
     @media screen and (max-width: 740px) {
         padding: 0 2.5rem;
     }
@@ -150,7 +163,7 @@ a:hover {
 }
 
 .title:hover {
-    text-decoration: none!important;
+    text-decoration: none !important;
     font-weight: 600;
 }
 
@@ -161,7 +174,8 @@ a:hover {
 }
 
 nav {
-    padding-left: 3rem!important;
+    padding-left: 3rem !important;
+
     @media screen and (max-width: 740px) {
         padding-left: 33px;
         padding-bottom: 0;
@@ -170,13 +184,13 @@ nav {
 
 nav a {
     @media screen and (max-width: 740px) {
-        text-align: center!important;
+        text-align: center !important;
     }
 }
 
 .navigation {
     @media screen and (max-width: 740px) {
-        text-align: center!important;
+        text-align: center !important;
     }
 }
 
@@ -196,24 +210,52 @@ h2 {
 }
 
 h3 {
+    font-family: 'Ibarra Real Nova', serif;
     font-size: 1.5rem;
     font-weight: 600;
     padding-top: 3rem;
     padding-bottom: 1rem;
+
     @media screen and (max-width: 740px) {
-        padding-top:1rem;
+        padding-top: 1rem;
     }
 }
+
 
 .row {
     width: 100%;
 }
 
+.hello {
+    height: 94vh;
+    // background-color: #A1AA82;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #fdf5e6, #fcb9bc, #a1aa82);
+
+    h2 {
+        padding-bottom: 0;
+        font-size: 5.5rem;
+        font-weight: 900;
+    }
+
+    h3 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        padding-top: 1rem;
+        font-size: 2.5rem;
+        color: oldlace;
+    }
+}
+
 .intro {
     padding-top: 3rem;
     padding-bottom: 10rem;
+
     @media screen and (max-width: 740px) {
-        padding-bottom: 5rem;;
+        padding-bottom: 5rem;
+        ;
     }
 }
 
@@ -275,7 +317,7 @@ h3 {
     fill: #A1AA82;
 }
 
-.dark-mode  .custom-shape-divider-top-1658328596 .shape-fill {
+.dark-mode .custom-shape-divider-top-1658328596 .shape-fill {
     fill: #000;
 }
 
@@ -283,16 +325,18 @@ h3 {
     align-items: center;
     justify-content: center;
     display: flex;
-    
+
 }
 
 .circle {
     // border: 10px solid #cbb3148c;
     border-radius: 50%;
     max-width: 100%;
+
     @media screen and (max-width: 900px) {
         max-width: 70%;
     }
+
     @media screen and (min-width: 1300px) {
         max-width: 70%;
     }
@@ -408,15 +452,16 @@ footer {
     justify-content: left;
     align-items: center;
     display: flex;
+
     @media screen and (max-width: 740px) {
-     padding-top: 2.5rem;
+        padding-top: 2.5rem;
     }
 }
 
 .mobile-col {
     @media screen and (max-width: 740px) {
         margin-bottom: 1rem;
-       }
+    }
 }
 
 .project-stack {
@@ -475,8 +520,9 @@ footer {
 
 .mushroomimg {
     width: 250px;
+
     @media screen and (max-width: 900px) {
-        display:none;
+        display: none;
     }
 }
 
@@ -525,42 +571,51 @@ footer {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+/* The Close Button */
+.close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 
 
@@ -569,7 +624,8 @@ footer {
 .intro-text {
     margin: auto;
     padding-left: 4rem;
-    @media screen and (max-width: 740px)  {
+
+    @media screen and (max-width: 740px) {
         padding-left: 0;
     }
 }
@@ -581,7 +637,8 @@ footer {
 
 .logo {
     text-align: center;
-    margin-bottom: 1.1rem;;
+    margin-bottom: 1.1rem;
+    ;
 }
 
 .logo img {
@@ -604,8 +661,9 @@ footer {
 .grid {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
+
     @media screen and (max-width: 740px) {
-        display:none;
+        display: none;
     }
 }
 
@@ -624,4 +682,3 @@ footer {
 .dark-mode .moon-emoji {
     display: inline;
 }
-

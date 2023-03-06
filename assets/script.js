@@ -26,6 +26,21 @@ if (testingLocalStorage != 'false') {
 }
 
 
+//Typing animation from typeitjs.com
+new TypeIt("#typed", {
+    speed: 95,
+    deleteSpeed: 85,
+    loop: true,
+  })
+  .type("Front End Web Developer")
+  .delete(23, {instant: false})
+  .type("Shopify Developer")
+  .delete(17, {instant: false})
+  .type("UI Developer")
+  .delete(12, {instant: false})
+  .go();
+
+
 
 //Delete and insert leaf or stars depending on dark mode
 
