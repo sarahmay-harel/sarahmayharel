@@ -60,6 +60,28 @@ body {
     // }
 }
 
+button {
+    cursor: pointer !important;
+    width: 75px;
+    background-color: darkolivegreen;
+    border: none;
+    color: white !important;
+    padding: 15px 32px 15px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20%;
+    z-index: 1;
+}
+
+
+button:hover {
+    background: #3f5b0e;
+    color: oldlace;
+}
+
+
 .dark-mode {
     background-color: #05263c; //#251d48
     color: oldlace;
@@ -89,6 +111,15 @@ body {
 
     }
 
+    button {
+        background-color: #7768ce !important;
+    }
+
+    button:hover {
+        background-color: #B2AAE4 !important;
+    }
+
+
     footer {
         background-color: black;
     }
@@ -103,39 +134,25 @@ body {
     right: 2px;
 }
 
-.dark-mode button {
-    background-color: #7768ce !important;
-}
-
-.dark-mode button:hover {
-    background-color: #B2AAE4 !important;
-}
-
-button {
+#darkModeBtn {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    width: 75px;
-    background-color: darkolivegreen;
-    border: none;
-    color: white;
-    padding: 15px 32px 15px 28px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 20%;
-    z-index: 1;
+
     @media screen and (max-width: 767px) {
         right: 30px;
         bottom: 30px;
-    }   
+    }
 }
 
-button:hover {
-    background: #3f5b0e;
-    color: oldlace;
-}
+// .resume-btn {
+//     button {
+//         width: 175px;
+//     }
+//     a {
+//         color: white !important;
+//     }
+// }
 
 .padrule {
     padding-left: 12rem;
@@ -240,15 +257,16 @@ h3 {
 
     @media screen and (max-width: 767px) {
         height: 60vh;
-    }   
+    }
 
     h2 {
         padding-bottom: 0;
         font-size: 5.5rem;
         font-weight: 900;
+
         @media screen and (max-width: 767px) {
             font-size: 3.5rem;
-        }        
+        }
     }
 
     h3 {
@@ -257,9 +275,10 @@ h3 {
         padding-top: 1rem;
         font-size: 2.5rem;
         color: oldlace;
+
         @media screen and (max-width: 767px) {
             font-size: 1.5rem;
-        }   
+        }
     }
 }
 
@@ -270,7 +289,7 @@ h3 {
 
     @media screen and (max-width: 740px) {
         padding-bottom: 5rem;
-        padding-top:3rem;
+        padding-top: 3rem;
     }
 }
 

@@ -30,6 +30,26 @@ body {
   background-color: oldlace;
 }
 
+button {
+  cursor: pointer !important;
+  width: 75px;
+  background-color: darkolivegreen;
+  border: none;
+  color: white !important;
+  padding: 15px 32px 15px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20%;
+  z-index: 1;
+}
+
+button:hover {
+  background: #3f5b0e;
+  color: oldlace;
+}
+
 .dark-mode {
   background-color: #05263c;
   color: oldlace;
@@ -52,6 +72,12 @@ body {
 .dark-mode .hello {
   background-image: linear-gradient(to bottom, #05263c, #1b1e21, #000);
 }
+.dark-mode button {
+  background-color: #7768ce !important;
+}
+.dark-mode button:hover {
+  background-color: #B2AAE4 !important;
+}
 .dark-mode footer {
   background-color: black;
 }
@@ -65,40 +91,16 @@ body {
   right: 2px;
 }
 
-.dark-mode button {
-  background-color: #7768ce !important;
-}
-
-.dark-mode button:hover {
-  background-color: #B2AAE4 !important;
-}
-
-button {
+#darkModeBtn {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  width: 75px;
-  background-color: darkolivegreen;
-  border: none;
-  color: white;
-  padding: 15px 32px 15px 28px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 20%;
-  z-index: 1;
 }
 @media screen and (max-width: 767px) {
-  button {
+  #darkModeBtn {
     right: 30px;
     bottom: 30px;
   }
-}
-
-button:hover {
-  background: #3f5b0e;
-  color: oldlace;
 }
 
 .padrule {
