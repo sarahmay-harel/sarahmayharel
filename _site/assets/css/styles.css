@@ -89,6 +89,12 @@ button {
   border-radius: 20%;
   z-index: 1;
 }
+@media screen and (max-width: 767px) {
+  button {
+    right: 30px;
+    bottom: 30px;
+  }
+}
 
 button:hover {
   background: #3f5b0e;
@@ -197,10 +203,20 @@ h3 {
   justify-content: center;
   background-image: linear-gradient(to bottom, #fdf5e6, #fcb9bc, #a1aa82);
 }
+@media screen and (max-width: 767px) {
+  .hello {
+    height: 60vh;
+  }
+}
 .hello h2 {
   padding-bottom: 0;
   font-size: 5.5rem;
   font-weight: 900;
+}
+@media screen and (max-width: 767px) {
+  .hello h2 {
+    font-size: 3.5rem;
+  }
 }
 .hello h3 {
   font-family: "Open Sans", sans-serif;
@@ -208,6 +224,11 @@ h3 {
   padding-top: 1rem;
   font-size: 2.5rem;
   color: oldlace;
+}
+@media screen and (max-width: 767px) {
+  .hello h3 {
+    font-size: 1.5rem;
+  }
 }
 
 .intro {
