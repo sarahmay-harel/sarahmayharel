@@ -17,27 +17,24 @@ if (localStorage.getItem('dark-mode') == 'true') {
 }
 
 
-// Testing check value of local storage key
-let testingLocalStorage = localStorage.getItem('dark-mode');
-if (testingLocalStorage != 'false') {
-    console.log(testingLocalStorage);
-} else {
-    console.log('buffy');
-}
-
-
 //Typing animation from typeitjs.com
 new TypeIt("#typed", {
+    startDelete: true,	
     speed: 95,
     deleteSpeed: 85,
     loop: true,
+    startDelay: 1000
   })
-  .type("Front End Web Developer")
-  .delete(23, {instant: false})
+  .delete(19, {instant: false})
   .type("Shopify Developer")
+  .pause(1000)
   .delete(17, {instant: false})
   .type("UI Developer")
+  .pause(1000)
   .delete(12, {instant: false})
+  .type("Front End Developer")
+  .pause(1000)
+  .delete(19, {instant: false})
   .go();
 
 
