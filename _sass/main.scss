@@ -265,12 +265,12 @@ h3 {
 
 
 .intro {
-    padding-top: 3rem;
+    padding-top: 8rem;
     padding-bottom: 10rem;
 
     @media screen and (max-width: 740px) {
         padding-bottom: 5rem;
-        ;
+        padding-top:3rem;
     }
 }
 
