@@ -1,7 +1,7 @@
 - name: About
   link: /#about
 - name: Resume
-  link: /resume.html
+  link: /#resume
 - name: Projects
   link: /projects.html
 - name: Contact
