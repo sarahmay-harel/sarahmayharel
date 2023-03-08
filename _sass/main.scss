@@ -348,7 +348,7 @@ button:hover {
 //shape 1
 .custom-shape-divider-top-1658328325 {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 100%;
     overflow: inherit; //fixes green line on mobile, used to be set to 'hidden'
@@ -373,10 +373,10 @@ button:hover {
 //shape 2
 .custom-shape-divider-top-1658328596 {
     position: absolute;
-    top: 0;
+    top: -1;
     left: 0;
     width: 100%;
-    overflow: inherit; //fixes green line on mobile, used to be set to 'hidden'
+    overflow: hidden;
     line-height: 0;
 }
 
