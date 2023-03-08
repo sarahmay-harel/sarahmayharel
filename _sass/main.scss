@@ -19,7 +19,7 @@
 // Mauve #aa8297
 // Deep brown #372a00
 
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Butcherman&family=Eczar:wght@400;500;600;700;800&family=Fruktur&family=IM+Fell+English:ital@0;1&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Katibeh&family=Kavoon&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik+Wet+Paint&family=Fragment+Mono:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Butcherman&family=Eczar:wght@400;500;600;700;800&family=Fruktur&family=IM+Fell+English:ital@0;1&family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Katibeh&family=Kavoon&family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik+Wet+Paint&family=Fragment+Mono:ital@0;1&family=Fragment+Mono:ital@0;1&family=Prata&family=Montaga&display=swap');
 
 /* fonts
 
@@ -64,6 +64,77 @@ body {
     // }
 }
 
+h1 {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+
+h2 {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 2.25rem;
+    font-weight: 300;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+
+    @media screen and (max-width: 740px) {
+        padding-top: 1rem;
+    }
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: darkolivegreen;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+}
+
+nav {
+    padding-left: 3rem !important;
+
+    @media screen and (max-width: 740px) {
+        padding-left: 33px;
+        padding-bottom: 0;
+    }
+}
+
+nav a {
+    @media screen and (max-width: 740px) {
+        text-align: center !important;
+    }
+}
+
+.navigation {
+    @media screen and (max-width: 740px) {
+        text-align: center !important;
+    }
+}
+
+.title:hover {
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+.current {
+    color: darkolivegreen;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+}
+
 button {
     width: 75px;
     background-color: darkolivegreen;
@@ -84,13 +155,17 @@ button:hover {
     color: oldlace;
 }
 
-
+//Dark Mode
 .dark-mode {
     background-color: #05263c; //#251d48
     color: oldlace;
 
     p {
         color: oldlace;
+    }
+
+    h2 {
+        color: oldlace!important;
     }
 
     hr {
@@ -125,6 +200,28 @@ button:hover {
 
     footer {
         background-color: black;
+    }
+
+    .moon-emoji {
+        display: inline;
+    }
+    
+    .leaf {
+        filter: brightness(0) invert(1);
+    }
+    
+    
+    .minimalist2 {
+        filter: brightness(0) invert(1);
+    }
+    
+    .darklogo {
+        filter: contrast(0);
+    }
+    
+    
+    .leaves-emoji {
+        display: none;
     }
 }
 
@@ -173,78 +270,6 @@ button:hover {
 .content {
     flex: 1;
 }
-
-a {
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-a:hover {
-    color: darkolivegreen;
-    text-decoration: underline wavy;
-    text-underline-offset: 5px;
-}
-
-.title:hover {
-    text-decoration: none !important;
-    font-weight: 600;
-}
-
-.current {
-    color: darkolivegreen;
-    text-decoration: underline wavy;
-    text-underline-offset: 5px;
-}
-
-nav {
-    padding-left: 3rem !important;
-
-    @media screen and (max-width: 740px) {
-        padding-left: 33px;
-        padding-bottom: 0;
-    }
-}
-
-nav a {
-    @media screen and (max-width: 740px) {
-        text-align: center !important;
-    }
-}
-
-.navigation {
-    @media screen and (max-width: 740px) {
-        text-align: center !important;
-    }
-}
-
-h1 {
-    font-family: 'Ibarra Real Nova', serif;
-    font-size: 3em;
-    font-weight: 300;
-}
-
-
-h2 {
-    font-family: 'Ibarra Real Nova', serif;
-    font-size: 2.25rem;
-    font-weight: 300;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-}
-
-h3 {
-    font-family: 'Ibarra Real Nova', serif;
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
-
-    @media screen and (max-width: 740px) {
-        padding-top: 1rem;
-    }
-}
-
 
 .row {
     width: 100%;
@@ -395,27 +420,10 @@ h3 {
 
 
 .skillscont {
-    // background-image: url(./assets/img/green-wave-4.png);
-    // background-size: 100%;
-    // background-position: 0 20%;
-    // background-repeat: no-repeat;
     background-color: #A1AA82;
     padding-top: 8em;
     padding-bottom: 2rem;
 
-    // @media screen and (max-width: 740px) {
-    //     background-image: url(./assets/img/green-wave-3.png);
-    //     background-size: 150%;
-    // }
-    // @media screen and (max-width: 480px) {
-    //     background-image: url(./assets/img/green-wave-3.png);
-    //     background-size: 200%;
-    // }
-    // @media screen and (max-width: 360px) {
-    //     background-image: url(./assets/img/green-wave-3.png);
-    //     background-size: 300%;
-
-    // }
 }
 
 .dark-mode .skillscont {
@@ -432,7 +440,6 @@ h3 {
 
 
 /*Footer*/
-
 footer a {
     color: #201901;
     text-decoration: none;
@@ -599,15 +606,6 @@ footer {
     opacity: 100%;
 }
 
-.dark-mode .leaf {
-    filter: brightness(0) invert(1);
-}
-
-
-.dark-mode .minimalist2 {
-    filter: brightness(0) invert(1);
-}
-
 
 .stars {
     filter: grayscale(1);
@@ -689,10 +687,6 @@ footer {
     max-height: 100px;
 }
 
-.dark-mode .darklogo {
-    filter: contrast(0);
-}
-
 .logocaption {
     margin-top: .5rem;
 }
@@ -715,14 +709,7 @@ footer {
     height: 100px;
 }
 
-.dark-mode .leaves-emoji {
-    display: none;
-}
 
 .moon-emoji {
     display: none;
-}
-
-.dark-mode .moon-emoji {
-    display: inline;
 }
