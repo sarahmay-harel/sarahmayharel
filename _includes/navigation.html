@@ -5,15 +5,38 @@
             <h1 style="font-size: 1.3em;margin-left:80px;"">{{ "Harel" | upcase }}</h1></a> -->
 
             {% unless page.header == false %}
-            <a href="/" class="title"><h1 style="font-size: 2em">{{ "SarahMay Harel" }} <span class="leaves-emoji">&#127811;</span><span class="moon-emoji">&#127769;</span></h1></a>
+            <a href="/" class="title">
+                <h1 style="font-size: 2em">{{ "SarahMay Harel" }} <span class="leaves-emoji">&#127811;</span><span
+                        class="moon-emoji">&#127769;</span></h1>
+            </a>
             {% endunless %}
         </div>
         <div class="col-md-6 col-sm-12 navigation text-right">
             {% for item in site.data.navigation %}
-            <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+            <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="{{ item.link }}" {% if page.url==item.link
+                %}class="current" {% endif %}>
                 {{ item.name | upcase }}
             </a> &nbsp;
             {% endfor %}
         </div>
     </div>
 </nav>
+
+<script>
+
+    function navDecoration() {
+        let hrefArray = document.getElementsByClassName("navItemJekyll")
+        let url = window.location.href
+
+        for (let i = 0; i < hrefArray.length; i++) {
+            if (hrefArray[i] == url) {
+                hrefArray[i].classList.add('current')
+            } else {
+                hrefArray[i].classList.remove('current')
+            }
+        }
+    }
+
+navDecoration();
+
+</script>
