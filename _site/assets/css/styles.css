@@ -144,6 +144,9 @@ button:hover {
 .dark-mode hr {
   border-top-color: oldlace;
 }
+.dark-mode nav {
+  background: #05263c;
+}
 .dark-mode a {
   color: oldlace;
 }
