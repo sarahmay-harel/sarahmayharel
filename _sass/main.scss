@@ -351,7 +351,7 @@ button:hover {
     top: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
+    overflow: inherit; //fixes green line on mobile, used to be set to 'hidden'
     line-height: 0;
 }
 
@@ -376,7 +376,7 @@ button:hover {
     top: 0;
     left: 0;
     width: 100%;
-    overflow: hidden;
+    overflow: inherit; //fixes green line on mobile, used to be set to 'hidden'
     line-height: 0;
 }
 
