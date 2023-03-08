@@ -21,19 +21,19 @@ if (localStorage.getItem('dark-mode') == 'true') {
 new TypeIt("#typed", {
     startDelete: true,	
     speed: 95,
-    deleteSpeed: 85,
+    deleteSpeed: 25,
     loop: true,
-    startDelay: 1000
+    startDelay: 2000
   })
   .delete(19, {instant: false})
   .type("Shopify Developer")
-  .pause(1000)
+  .pause(2000)
   .delete(17, {instant: false})
   .type("UI Developer")
-  .pause(1000)
+  .pause(2000)
   .delete(12, {instant: false})
   .type("Front End Developer")
-  .pause(1000)
+  .pause(2000)
   .delete(19, {instant: false})
   .go();
 
