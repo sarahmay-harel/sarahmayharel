@@ -115,15 +115,24 @@ nav {
         padding-left: 33px;
         padding-bottom: 0;
     }
+
+    a {
+        @media screen and (max-width: 740px) {
+            text-align: center !important;
+        }
+    }
+
 }
 
-nav a {
-    @media screen and (max-width: 740px) {
-        text-align: center !important;
-    }
+.shadow {
+    box-shadow: 0 20px 25px #9b8f3f40;
 }
 
 .navigation {
+    justify-content: flex-end;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
     @media screen and (max-width: 740px) {
         text-align: center !important;
     }

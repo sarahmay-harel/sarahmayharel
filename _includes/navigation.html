@@ -1,4 +1,4 @@
-<nav class="navbar sticky-top">
+<nav id="nav" class="navbar sticky-top">
     <div class="row">
         <div class="col-md-6 col-sm-12">
             <!-- <a href="/sarahmayharel" class="text-left title"><h1 style="font-size: 1.3em">{{ "SarahMay" | upcase }}</h1>
@@ -24,6 +24,7 @@
 
 <script>
 
+    //Adds wavy text underline to nav items when visited
     function navDecoration() {
         let hrefArray = document.getElementsByClassName("navItemJekyll")
         let url = window.location.href
@@ -38,5 +39,17 @@
     }
 
     navDecoration();
+
+    //Adds box shadow to nav when page is scrolled
+    window.addEventListener('scroll', function () {
+        var nav = document.getElementById("nav");
+        if (pageYOffset > 10) {
+            nav.classList.add('shadow');
+        } else {
+            nav.classList.remove('shadow');
+        }
+    })
+
+
 
 </script>
