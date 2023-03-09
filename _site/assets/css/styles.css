@@ -398,6 +398,9 @@ button:hover {
 .experience {
   margin-top: 3rem;
 }
+.experience div:first-of-type {
+  padding-top: 5rem;
+}
 
 /*Footer*/
 footer a {
