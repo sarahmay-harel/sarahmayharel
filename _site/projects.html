@@ -14,7 +14,7 @@
   </head>
   <body id="bodyID">
     <nav id="nav" class="navbar sticky-top">
-    <div class="row">
+    <div id="navRow" class="row">
         <div class="col-md-6 col-sm-12">
             <!-- <a href="/sarahmayharel" class="text-left title"><h1 style="font-size: 1.3em">SARAHMAY</h1>
             <h1 style="font-size: 1.3em;margin-left:80px;"">HAREL</h1></a> -->
@@ -76,7 +76,15 @@
         }
     })
 
-
+//     window.addEventListener('scroll', function() {
+//         console.log(pageYOffset)
+//         var navRow = document.getElementById("navRow");
+//         if (pageYOffset > 0) {
+//             navRow.classList.add('margin-fix')
+//     } else {
+//         navRow.classList.remove('margin-fix')
+//     }
+// })
 
 </script>
     <button id="darkModeBtn" style="cursor:pointer;"><input class="dark-mode-checkbox" type="checkbox" id="moonButton"><i class="fa-solid fa-moon" style="font-size:28px"></i></button>

@@ -112,8 +112,11 @@ nav {
     background: oldlace;
 
     @media screen and (max-width: 740px) {
-        padding-left: 33px;
-        padding-bottom: 0;
+        // padding: 0 !important;
+        // margin: 0rem -1rem;
+        // .margin-fix {
+        //     margin-top: 1.5rem;
+        // }
     }
 
     a {
@@ -121,7 +124,6 @@ nav {
             text-align: center !important;
         }
     }
-
 }
 
 .shadow {
@@ -135,6 +137,7 @@ nav {
     align-items: center;
     @media screen and (max-width: 740px) {
         text-align: center !important;
+        justify-content: center;
     }
 }
 
