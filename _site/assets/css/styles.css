@@ -87,7 +87,7 @@ nav {
   }
 }
 nav .navigation button#navToggle {
-  background-color: unset;
+  background-color: unset !important;
   color: black !important;
   padding: unset;
   width: unset;
@@ -214,6 +214,12 @@ button:hover {
 }
 .dark-mode button:hover {
   background-color: #B2AAE4 !important;
+}
+.dark-mode .navigation button#navToggle {
+  color: white !important;
+}
+.dark-mode .mobile-nav {
+  background-color: #05263c;
 }
 .dark-mode footer {
   background-color: black;
