@@ -13,37 +13,66 @@
 
   </head>
   <body id="bodyID">
-    <nav id="nav" class="navbar sticky-top">
-    <div id="navRow" class="row">
-        <div class="col-md-6 col-sm-12">
+    <nav id="nav" class="navbar sticky-top px-5">
+    <div id="navRow">
+        <div class="">
             <!-- <a href="/sarahmayharel" class="text-left title"><h1 style="font-size: 1.3em">SARAHMAY</h1>
             <h1 style="font-size: 1.3em;margin-left:80px;"">HAREL</h1></a> -->
 
-            
             <a href="/" class="title">
                 <h1 style="font-size: 2em">SarahMay Harel <span class="leaves-emoji">&#127811;</span><span
                         class="moon-emoji">&#127769;</span></h1>
             </a>
-            
         </div>
-        <div class="col-md-6 col-sm-12 navigation text-right">
-            
-            <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#about" >
-                ABOUT
-            </a> &nbsp;
-            
-            <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#resume" >
-                RESUME
-            </a> &nbsp;
-            
-            <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/projects.html" >
-                PROJECTS
-            </a> &nbsp;
-            
-            <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/contact.html" >
-                CONTACT
-            </a> &nbsp;
-            
+        <div class="navigation text-right">
+            <div class="d-block d-md-none">
+                <button id="navToggle">
+                    <i id="fa-bars" class="fa-solid fa-bars"></i>
+                    <i id="fa-xmark" class="fa-solid fa-xmark d-none"></i>
+                </button>
+            </div>
+
+            <div id="mobileNav" class="mobile-nav d-none">
+                <ul>
+                    
+                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#about" >
+                            ABOUT
+                        </a></li>
+                    
+                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#resume" >
+                            RESUME
+                        </a></li>
+                    
+                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/projects.html" >
+                            PROJECTS
+                        </a></li>
+                    
+                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/contact.html" >
+                            CONTACT
+                        </a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="d-none d-md-block">
+                
+                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#about" >
+                    ABOUT
+                </a> &nbsp;
+                
+                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#resume" >
+                    RESUME
+                </a> &nbsp;
+                
+                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/projects.html" >
+                    PROJECTS
+                </a> &nbsp;
+                
+                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/contact.html" >
+                    CONTACT
+                </a> &nbsp;
+                
+            </div>
         </div>
     </div>
 </nav>
@@ -76,15 +105,18 @@
         }
     })
 
-//     window.addEventListener('scroll', function() {
-//         console.log(pageYOffset)
-//         var navRow = document.getElementById("navRow");
-//         if (pageYOffset > 0) {
-//             navRow.classList.add('margin-fix')
-//     } else {
-//         navRow.classList.remove('margin-fix')
-//     }
-// })
+    //Display nav on toggle click
+
+    let navToggle = document.getElementById('navToggle');
+    let mobileNav = document.getElementById('mobileNav');
+    let faBars = document.getElementById('fa-bars');
+    let faXmark = document.getElementById('fa-xmark');
+    navToggle.addEventListener('click', function () {
+        mobileNav.classList.toggle('d-none');
+        faBars.classList.toggle('d-none');
+        faXmark.classList.toggle('d-none');
+    })
+
 
 </script>
     <button id="darkModeBtn" style="cursor:pointer;"><input class="dark-mode-checkbox" type="checkbox" id="moonButton"><i class="fa-solid fa-moon" style="font-size:28px"></i></button>
