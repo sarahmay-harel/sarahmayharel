@@ -48,6 +48,7 @@ font-family: 'UnifrakturCook', cursive;
     font-weight: normal;
     font-style: normal;
 }
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -126,21 +127,26 @@ nav {
     }
 
     .navigation button#navToggle {
-        background-color: unset!important;
-        color: black!important;
+        background-color: unset !important;
+        color: black !important;
         padding: unset;
         width: unset;
         transition: all 0.3s linear;
-        
+
     }
 
     #navToggle:hover {
         transform: rotate(90deg);
-      }
+    }
 
-      i:focus-visible {
+    i:focus-visible {
         outline: none;
-      }
+    }
+
+
+    ul {
+        padding-inline-start: unset;
+    }
 }
 
 #navRow {
@@ -156,13 +162,14 @@ nav {
     display: flex;
     gap: 0.5rem;
     align-items: center;
+
     @media screen and (max-width: 740px) {
         text-align: center !important;
         justify-content: center;
     }
 }
 
-#mobileNav{
+#mobileNav {
     transition: all 0.3s linear;
 }
 
@@ -177,13 +184,15 @@ nav {
     transform: translate(-50%, -50%);
     width: 100vw;
     padding-bottom: 1rem;
+
     li {
         list-style: none;
         text-align: left;
         line-height: 2rem;
     }
-    @media screen and (min-width: 740px) {
-        display: none!important;
+
+    @media screen and (min-width: 768px) {
+        display: none !important;
     }
 }
 
@@ -232,7 +241,7 @@ button:hover {
     }
 
     h2 {
-        color: oldlace!important;
+        color: oldlace !important;
     }
 
     hr {
@@ -269,10 +278,10 @@ button:hover {
     }
 
     .navigation button#navToggle {
-        color: white!important;
+        color: white !important;
     }
 
-    .mobile-nav{
+    .mobile-nav {
         background-color: #05263c;
     }
 
@@ -283,21 +292,21 @@ button:hover {
     .moon-emoji {
         display: inline;
     }
-    
+
     .leaf {
         filter: brightness(0) invert(1);
     }
-    
-    
+
+
     .minimalist2 {
         filter: brightness(0) invert(1);
     }
-    
+
     .darklogo {
         filter: contrast(0);
     }
-    
-    
+
+
     .leaves-emoji {
         display: none;
     }
@@ -354,7 +363,7 @@ button:hover {
 }
 
 #about {
-    margin-top:2rem!important;
+    margin-top: 2rem !important;
 }
 
 .hello {
@@ -371,7 +380,7 @@ button:hover {
 
     h1 {
         font-family: 'Open Sans', sans-serif;
-        padding-top:0;
+        padding-top: 0;
         padding-bottom: 0;
         font-size: 5.5rem;
         font-weight: 900;

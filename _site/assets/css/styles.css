@@ -59,7 +59,7 @@ h3 {
   padding-top: 3rem;
   padding-bottom: 1rem;
 }
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 768px) {
   h3 {
     padding-top: 1rem;
   }
@@ -98,6 +98,9 @@ nav #navToggle:hover {
 }
 nav i:focus-visible {
   outline: none;
+}
+nav ul {
+  padding-inline-start: unset;
 }
 
 #navRow {
@@ -141,7 +144,7 @@ nav i:focus-visible {
   text-align: left;
   line-height: 2rem;
 }
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 768px) {
   .mobile-nav {
     display: none !important;
   }
