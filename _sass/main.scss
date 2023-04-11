@@ -590,6 +590,11 @@ footer {
 
 /* Projects */
 
+.projects .col-md-4 {
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
 .projects .heading {
     text-align: center;
 }
@@ -611,10 +616,15 @@ footer {
     font-weight: 700;
 }
 
+.projects figure {
+    transition: all 0.3s ease;
+}
+
 .projects figure:hover {
     transform: rotate(3deg) scale(1.05);
-    transition: all ease-in-out .3s;
 }
+
+
 
 .project-image {
     max-width: 100%;
