@@ -505,9 +505,36 @@ footer {
 }
 
 /* Projects */
+.projects .heading {
+  text-align: center;
+}
+
+.projects-intro {
+  max-width: 70%;
+  margin: auto;
+}
+
+.projects ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  display: none;
+}
+
+.project-skills {
+  font-weight: 700;
+}
+
+.projects figure:hover {
+  transform: rotate(3deg) scale(1.05);
+  transition: all ease-in-out 0.3s;
+}
+
 .project-image {
   max-width: 100%;
   border-radius: 5%;
+  margin: auto;
 }
 
 .project-info {

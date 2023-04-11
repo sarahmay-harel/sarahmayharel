@@ -590,10 +590,44 @@ footer {
 
 /* Projects */
 
+.projects .heading {
+    text-align: center;
+}
+
+.projects-intro {
+    max-width: 70%;
+    margin: auto;
+}
+
+.projects ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    display: none; //TODO reveal these once modals are ready
+}
+
+.project-skills {
+    font-weight: 700;
+}
+
+.projects figure:hover {
+    transform: rotate(3deg) scale(1.05);
+    transition: all ease-in-out .3s;
+}
+
 .project-image {
     max-width: 100%;
     border-radius: 5%;
+    margin: auto;
 }
+
+// .shopify {
+//     background-color: rgb(218, 197, 255);
+//     height: 235px;
+//     width: 340px;
+//     border-radius: 5%;
+// }
 
 .project-info {
     justify-content: left;

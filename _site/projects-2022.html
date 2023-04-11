@@ -1,0 +1,395 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - SarahMay Harel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/potted-plant-emoji-favicon.png">
+    <script src="https://kit.fontawesome.com/2d47902197.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+  </head>
+  <body id="bodyID">
+    <nav id="nav" class="navbar sticky-top px-5">
+    <div id="navRow">
+        <div class="">
+            <!-- <a href="/sarahmayharel" class="text-left title"><h1 style="font-size: 1.3em">SARAHMAY</h1>
+            <h1 style="font-size: 1.3em;margin-left:80px;"">HAREL</h1></a> -->
+
+            <a href="/" class="title d-block d-md-none">
+                <h1 style="font-size: 2em">SarahMay Harel <span class="leaves-emoji">&#127811;</span><span
+                        class="moon-emoji">&#127769;</span></h1>
+            </a>
+        </div>
+        <div class="navigation text-right">
+            <div class="d-block d-md-none">
+                <button id="navToggle">
+                    <i id="fa-bars" class="fa-solid fa-bars"></i>
+                    <i id="fa-xmark" class="fa-solid fa-xmark d-none"></i>
+                </button>
+            </div>
+
+            <div id="mobileNav" class="mobile-nav d-none">
+                <ul>
+                    
+                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#about" >
+                            ABOUT
+                        </a></li>
+                    
+                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#resume" >
+                            RESUME
+                        </a></li>
+                    
+                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/projects.html" >
+                            PROJECTS
+                        </a></li>
+                    
+                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/contact.html" >
+                            CONTACT
+                        </a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="d-none d-md-block">
+                
+                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#about" >
+                    ABOUT
+                </a> &nbsp;
+                
+                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#resume" >
+                    RESUME
+                </a> &nbsp;
+                
+                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/projects.html" >
+                    PROJECTS
+                </a> &nbsp;
+                
+                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/contact.html" >
+                    CONTACT
+                </a> &nbsp;
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+<script>
+
+    //Adds wavy text underline to nav items when visited
+    function navDecoration() {
+        let hrefArray = document.getElementsByClassName("navItemJekyll")
+        let url = window.location.href
+
+        for (let i = 0; i < hrefArray.length; i++) {
+            if (hrefArray[i] == url) {
+                hrefArray[i].classList.add('current')
+            } else {
+                hrefArray[i].classList.remove('current')
+            }
+        }
+    }
+
+    navDecoration();
+
+    //Adds box shadow to nav when page is scrolled
+    window.addEventListener('scroll', function () {
+        var nav = document.getElementById("nav");
+        if (pageYOffset > 10) {
+            nav.classList.add('shadow');
+        } else {
+            nav.classList.remove('shadow');
+        }
+    })
+
+    //Display nav on toggle click
+
+    let navToggle = document.getElementById('navToggle');
+    let mobileNav = document.getElementById('mobileNav');
+    let faBars = document.getElementById('fa-bars');
+    let faXmark = document.getElementById('fa-xmark');
+    navToggle.addEventListener('click', function () {
+        mobileNav.classList.toggle('d-none');
+        faBars.classList.toggle('d-none');
+        faXmark.classList.toggle('d-none');
+    })
+
+
+</script>
+    <button id="darkModeBtn" style="cursor:pointer;"><input class="dark-mode-checkbox" type="checkbox" id="moonButton"><i class="fa-solid fa-moon" style="font-size:28px"></i></button>
+    <main class="content">
+    <div class="project-intro pt-5 padrule">
+    <h2 class="pb-0">Portfolio Website</h2>
+    <p class="project-stack">2022 / Jekyll, GitHub, git</p>
+</div>
+
+<div class="row padrule">
+    <div class="col-md-8 col-sm-12">
+        <img src="assets/img/website-asset-portfolio-site-3.png" class="project-image">
+    </div>
+
+    <div class="col-md-4 col-sm-12 project-info">
+        <p>
+            <b>Role:</b>
+            <br>
+            Front End Developer, Designer
+            <br>
+            <br>
+            <b>Date:</b>
+            <br>
+            2021 - 2022
+            <br>
+        </p>
+    </div>
+</div>
+
+<div class="project-overview padrule">
+    <h3>Overview</h3>
+    <ul class="pb-5">
+        <li>Handcoded personal portfolio website using HTML, SCSS, and JavaScript, and built with Jekyll and GitHub Pages.</li>
+        <li>Maintained version control across multiple iterations using git.</li>
+        <li>Designed site appearance and structure, built custom SVGs, and implemented Dark Mode functionality.</li>
+        <li>One of my favorite projects so far! The client was very flexible to my design choices, and I got to learn a ton about Jekyll, git, and CSS.</li>
+    </ul>
+</div>
+
+<hr>
+
+<div class="project-intro padrule">
+    <h2 class="pb-0">Customized Shopify Templates</h2>
+    <p class="project-stack">2021 / eCommerce Strategy, Shopify Liquid, Ruby</p>
+</div>
+
+<div class="row padrule">
+    <div class="col-md-8 col-sm-12">
+        <img src="assets/img/workman-cart-mobile-1.webp" class="project-image">
+    </div>
+
+    <div class="col-md-4 col-sm-12 project-info">
+        <p>
+            <b>Role:</b>
+            <br>
+            UX/UI + Front End Developer
+            <br>
+            <br>
+            <b>Date:</b>
+            <br>
+            2020 - 2021
+            <br>
+        </p>
+    </div>
+</div>
+
+<div class="project-overview padrule">
+    <h3>Overview</h3>
+    <ul>
+        <li>Implemented calculator script that shows &ldquo;You are $__ away from free shipping&rdquo; + Continue Shopping link. This feature increased average order value by 15%.</li>
+        <li>Advocated for and ultimately implemented language cautioning customers about shipping delays, and deterring the use of P.O. box addresses during the height of eCommerce season. This feature reduced customer complaints by close to 20%, and saved an average of $1,400 in shipping costs.</li>
+        <li>Implemented &ldquo;Gift Messaging&rdquo; text input area for customers sending orders as gifts for the holidays.</li>
+        <li>Collaborated with 3rd party developers to implement &ldquo;Similar Products&rdquo; in cart promoting upsells and increasing average order value.</li>
+    </ul>
+</div>
+
+
+<!-- Trigger/Open The Modal -->
+
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="assets/img/workman-similar-products-tablet.webp" class="project-image">
+    </div>
+  
+  </div>
+
+<div class="row pt-5 padrule">
+    <div class="col-md-8 col-sm-12 mobile-col">
+      <img id="myBtn" src="assets/img/workman-similar-products-tablet.webp" class="project-image">
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <img src="assets/img/workman-gift-messaging-mobile.webp" class="project-image mb-3">
+      <img src="assets/img/workman-cart-mobile-2.webp" class="project-image">
+    </div>
+  </div>
+  <hr>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+<div class="project-intro padrule">
+    <h2 class="pb-0">Data Analytics Reporting & Visualization</h2>
+    <p class="project-stack">2021 / Google Analytics, PowerPoint</p>
+</div>
+
+<div class="row padrule">
+    <div class="col-md-8 col-sm-12">
+        <img src="assets/img/data-analytics-2.png" class="project-image">
+    </div>
+
+    <div class="col-md-4 col-sm-12 project-info">
+        <p>
+            <b>Role:</b>
+            <br>
+            Data Analyst, Technical Lead
+            <br>
+            <br>
+            <b>Date:</b>
+            <br>
+            2019 - 2021
+            <br>
+        </p>
+    </div>
+</div>
+
+<div class="project-overview padrule">
+    <h3>Overview</h3>
+    <ul>
+        <li>Evaluated growth and potential opportunities for our eCommerce business using data from Google Analytics.</li>
+        <li>Developed presentations for C-level stakeholders to communicate the current and potential future state of business, identifying key consumer touchpoints, what the business is succeeding at, and areas of opportunity to grow.</li>
+        <li>Created graphs, charts, and made unbiased interpretations illustrating the websites&rsquo; analytics reporting in a way that it could easily inform successful data-driven business decisions.</li>
+    </ul>
+</div>
+
+<div class="row pt-5 padrule">
+    <div class="col-md-6 col-sm-12 mobile-col">
+      <img src="assets/img/data-analytics-cyber-week.png" class="project-image">
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <img src="assets/img/data-analytics-business-review.png" class="project-image mb-3">
+    </div>
+  </div>
+  <hr>
+<div class="project-intro padrule">
+    <h2 class="pb-0">eCommerce Website Redesign
+    </h2>
+    <p class="project-stack">2019 / Project Management, UX/UI</p>
+</div>
+
+<div class="row padrule">
+    <div class="col-md-8 col-sm-12">
+        <img src="assets/img/pageaday-home-mobile-1-2-2.png" class="project-image">
+    </div>
+
+    <div class="col-md-4 col-sm-12 project-info">
+        <p>
+            <b>Role:</b>
+            <br>
+            Project Manager
+            <br>
+            <br>
+            <b>Date:</b>
+            <br>
+            2018 - 2019
+            <br>
+        </p>
+    </div>
+</div>
+
+<div class="project-overview padrule">
+    <h3>Overview</h3>
+    <ul>
+        <li>Created RFP for redesign and relaunch of the website, with the goal of UX/UI designed to increase conversions. Direct-to-Consumer sales, newsletter signups, User-Generated Content</li>
+        <li>Iterated through user journeys and consumer touchpoints, created wireframes and visual representations for mobile, tablet, desktop.</li>
+        <li>Developed information architecture to emphasize eCommerce focus.</li>
+        <li>Worked closely with developers on iterations and code implementation.</li>
+        <li>Implemented Basecamp as a documentation and project management tool.</li>
+        <li>Coordinated between developers and C-level stakeholders to ensure project deliverables met expectations.</li>
+    </ul>
+</div>
+
+<div class="row pt-5 pb-5 padrule">
+    <div class="col-md-8 col-sm-12 mobile-col">
+      <img src="assets/img/pageaday-contest-tablet-1-2.png" class="project-image">
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <img src="assets/img/pageaday-stationery-mobile-4-2.png" class="project-image mb-3">
+      <img src="assets/img/pageaday-newsletter-mobile-3-2.png" class="project-image">
+    </div>
+  </div>
+
+  <div class="text-center  pt-5 pb-5">
+    <p class="disclaimer">Some aspects of these website images have been replaced in compliance with non-disclosure agreements.</p>
+  </div>
+    </main>
+    <div class="shape" style="padding:0!important;">
+      <div class="custom-shape-divider-top-1658328325">
+          <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+              <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          </svg>
+      </div>
+  </div>
+    <footer>
+    <div class="row">
+
+        <div class="col-md-4 col-sm-12 text-center">
+            
+            <a href="/#about" >
+                ABOUT
+            </a> &nbsp;
+            
+            <a href="/#resume" >
+                RESUME
+            </a> &nbsp;
+            
+            <a href="/projects.html" >
+                PROJECTS
+            </a> &nbsp;
+            
+            <a href="/contact.html" >
+                CONTACT
+            </a> &nbsp;
+            
+        </div>
+
+
+        <div class="col-md-4 col-sm-12 text-center">
+            <div class="pt-3 d-md-none"></div>
+            <p>
+                <a href="https://github.com/sarahmay-harel" target="_blank"><img
+                        src="https://i.imgur.com/A3Hhmgf.png" class="tiny"></a>
+                <a href="https://www.linkedin.com/in/sarahmayharel/" target="_blank"><img
+                        src="https://i.imgur.com/FqqjyxG.png" class="tiny"></a>
+                <a href="https://twitter.com/book_spider" target="_blank"><img src="https://i.imgur.com/mnPU5kM.png"
+                        class="tiny"></a>
+                <a href="mailto:sarahmayharel@gmail.com"><img src="https://i.imgur.com/eAM8FWE.png"
+                        class="tiny"></a>
+            </p>
+        </div>
+
+        <div class="col-md-4 col-sm-12 text-center">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script>, SarahMay Harel</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="assets/script.js" crossorigin="anonymous"></script>
+  </body>
+</html>

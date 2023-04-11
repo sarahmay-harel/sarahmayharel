@@ -121,219 +121,95 @@
 </script>
     <button id="darkModeBtn" style="cursor:pointer;"><input class="dark-mode-checkbox" type="checkbox" id="moonButton"><i class="fa-solid fa-moon" style="font-size:28px"></i></button>
     <main class="content">
-    <div class="project-intro pt-5 padrule">
-    <h2 class="pb-0">Portfolio Website</h2>
-    <p class="project-stack">2022 / Jekyll, GitHub, git</p>
-</div>
-
-<div class="row padrule">
-    <div class="col-md-8 col-sm-12">
-        <img src="assets/img/website-asset-portfolio-site-3.png" class="project-image">
+    <div class="container projects">
+  <div class="heading">
+    <h2>Projects</h1>
+    <p class="mb-5 projects-intro">Welcome to my project portfolio! Below is a selection of my recent web development work, ranging from bespoke website templates for eCommerce businesses to data analytics and UX/UI development. Each project was tailored to meet the unique needs of my clients and designed with a focus on user experience, functionality, and scalability.</p>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <figure class="project">
+        <img src="assets/img/logos/Shopify-2.0-logo-project.png" class="project-image">
+      </figure>
+      <figcaption class="project-title">
+        <h3 class="pt-0">Shopify 2.0 Theme Architecture</h3>
+        <p class="project-skills">Front End Development, Git</p>
+        <p>Refactored clients' existing Liquid templates to utilize new features introduced in the 2.0 architecture.</p>
+      </figcaption>
+        <ul>
+          <li><a href="">Read More</a></li>
+        </ul>
     </div>
-
-    <div class="col-md-4 col-sm-12 project-info">
-        <p>
-            <b>Role:</b>
-            <br>
-            Front End Developer, Designer
-            <br>
-            <br>
-            <b>Date:</b>
-            <br>
-            2021 - 2022
-            <br>
-        </p>
-    </div>
-</div>
-
-<div class="project-overview padrule">
-    <h3>Overview</h3>
-    <ul class="pb-5">
-        <li>Handcoded personal portfolio website using HTML, SCSS, and JavaScript, and built with Jekyll and GitHub Pages.</li>
-        <li>Maintained version control across multiple iterations using git.</li>
-        <li>Designed site appearance and structure, built custom SVGs, and implemented Dark Mode functionality.</li>
-        <li>One of my favorite projects so far! The client was very flexible to my design choices, and I got to learn a ton about Jekyll, git, and CSS.</li>
-    </ul>
-</div>
-
-<hr>
-
-<div class="project-intro padrule">
-    <h2 class="pb-0">Customized Shopify Templates</h2>
-    <p class="project-stack">2021 / eCommerce Strategy, Shopify Liquid, Ruby</p>
-</div>
-
-<div class="row padrule">
-    <div class="col-md-8 col-sm-12">
+    <div class="col-md-4">
+      <figure class="project">
         <img src="assets/img/workman-cart-mobile-1.webp" class="project-image">
+      </figure>
+      <figcaption class="project-title">
+        <h3 class="pt-0">Shopify Templates</h3>
+        <p class="project-skills">UX/UI Design, Front End Development</p>
+        <p>Designed and built custom templates for an independent book publisher's eCommerce store.</p>
+      </figcaption>
+      <ul>
+        <li><a href="">Read More</a></li>
+      </ul>
     </div>
-
-    <div class="col-md-4 col-sm-12 project-info">
-        <p>
-            <b>Role:</b>
-            <br>
-            UX/UI + Front End Developer
-            <br>
-            <br>
-            <b>Date:</b>
-            <br>
-            2020 - 2021
-            <br>
-        </p>
-    </div>
-</div>
-
-<div class="project-overview padrule">
-    <h3>Overview</h3>
-    <ul>
-        <li>Implemented calculator script that shows &ldquo;You are $__ away from free shipping&rdquo; + Continue Shopping link. This feature increased average order value by 15%.</li>
-        <li>Advocated for and ultimately implemented language cautioning customers about shipping delays, and deterring the use of P.O. box addresses during the height of eCommerce season. This feature reduced customer complaints by close to 20%, and saved an average of $1,400 in shipping costs.</li>
-        <li>Implemented &ldquo;Gift Messaging&rdquo; text input area for customers sending orders as gifts for the holidays.</li>
-        <li>Collaborated with 3rd party developers to implement &ldquo;Similar Products&rdquo; in cart promoting upsells and increasing average order value.</li>
-    </ul>
-</div>
-
-
-<!-- Trigger/Open The Modal -->
-
-<div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <img src="assets/img/workman-similar-products-tablet.webp" class="project-image">
-    </div>
-  
-  </div>
-
-<div class="row pt-5 padrule">
-    <div class="col-md-8 col-sm-12 mobile-col">
-      <img id="myBtn" src="assets/img/workman-similar-products-tablet.webp" class="project-image">
-    </div>
-    <div class="col-md-4 col-sm-12">
-      <img src="assets/img/workman-gift-messaging-mobile.webp" class="project-image mb-3">
-      <img src="assets/img/workman-cart-mobile-2.webp" class="project-image">
-    </div>
-  </div>
-  <hr>
-
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    </script>
-<div class="project-intro padrule">
-    <h2 class="pb-0">Data Analytics Reporting & Visualization</h2>
-    <p class="project-stack">2021 / Google Analytics, PowerPoint</p>
-</div>
-
-<div class="row padrule">
-    <div class="col-md-8 col-sm-12">
+    <div class="col-md-4">
+      <figure class="project">
         <img src="assets/img/data-analytics-2.png" class="project-image">
+      </figure>
+      <figcaption class="project-title">
+        <h3 class="pt-0">Data Analytics</h3>
+        <p class="project-skills">Google Analytics, Data Visualization & Reporting</p>
+        <p>Developed data-driven presentations for C-level stakeholders illustrating the websites&rsquo; analytics to inform successful data-driven business decisions.</p>
+      </figcaption>
+      <ul>
+        <li><a href="">Read More</a></li>
+      </ul>
     </div>
 
-    <div class="col-md-4 col-sm-12 project-info">
-        <p>
-            <b>Role:</b>
-            <br>
-            Data Analyst, Technical Lead
-            <br>
-            <br>
-            <b>Date:</b>
-            <br>
-            2019 - 2021
-            <br>
-        </p>
-    </div>
-</div>
-
-<div class="project-overview padrule">
-    <h3>Overview</h3>
-    <ul>
-        <li>Evaluated growth and potential opportunities for our eCommerce business using data from Google Analytics.</li>
-        <li>Developed presentations for C-level stakeholders to communicate the current and potential future state of business, identifying key consumer touchpoints, what the business is succeeding at, and areas of opportunity to grow.</li>
-        <li>Created graphs, charts, and made unbiased interpretations illustrating the websites&rsquo; analytics reporting in a way that it could easily inform successful data-driven business decisions.</li>
-    </ul>
-</div>
-
-<div class="row pt-5 padrule">
-    <div class="col-md-6 col-sm-12 mobile-col">
-      <img src="assets/img/data-analytics-cyber-week.png" class="project-image">
-    </div>
-    <div class="col-md-6 col-sm-12">
-      <img src="assets/img/data-analytics-business-review.png" class="project-image mb-3">
-    </div>
   </div>
-  <hr>
-<div class="project-intro padrule">
-    <h2 class="pb-0">eCommerce Website Redesign
-    </h2>
-    <p class="project-stack">2019 / Project Management, UX/UI</p>
-</div>
-
-<div class="row padrule">
-    <div class="col-md-8 col-sm-12">
+  <div class="row">
+    <div class="col-md-4">
+      <figure class="project">
         <img src="assets/img/pageaday-home-mobile-1-2-2.png" class="project-image">
+      </figure>
+      <figcaption class="project-title">
+        <h3 class="pt-0">eCommerce Website Redesign</h3>
+        <p class="project-skills">UX/UI Development, Project Management</p>
+        <p>Designed and built custom templates for an independent book publisher's eCommerce store.</p>
+      </figcaption>
+      <ul>
+        <li><a href="">Read More</a></li>
+      </ul>
     </div>
-
-    <div class="col-md-4 col-sm-12 project-info">
-        <p>
-            <b>Role:</b>
-            <br>
-            Project Manager
-            <br>
-            <br>
-            <b>Date:</b>
-            <br>
-            2018 - 2019
-            <br>
-        </p>
+    <div class="col-md-4">
+      <figure class="project">
+        <img src="assets/img/jekyll-template-project.png" class="project-image">
+      </figure>
+      <figcaption class="project-title">
+        <h3 class="pt-0">Portfolio Template</h3>
+        <p class="project-skills">Front End Development, Jekyll, GitHub</p>
+        <p>Developed a custom portfolio website template using HTML, SCSS, and JavaScript. Jekyll generates a performant static site, and GitHub Pages offers scalability and security.</p>
+      </figcaption>
+      <ul>
+        <li><a href="">Read More</a></li>
+      </ul>
     </div>
-</div>
-
-<div class="project-overview padrule">
-    <h3>Overview</h3>
-    <ul>
-        <li>Created RFP for redesign and relaunch of the website, with the goal of UX/UI designed to increase conversions. Direct-to-Consumer sales, newsletter signups, User-Generated Content</li>
-        <li>Iterated through user journeys and consumer touchpoints, created wireframes and visual representations for mobile, tablet, desktop.</li>
-        <li>Developed information architecture to emphasize eCommerce focus.</li>
-        <li>Worked closely with developers on iterations and code implementation.</li>
-        <li>Implemented Basecamp as a documentation and project management tool.</li>
-        <li>Coordinated between developers and C-level stakeholders to ensure project deliverables met expectations.</li>
-    </ul>
-</div>
-
-<div class="row pt-5 pb-5 padrule">
-    <div class="col-md-8 col-sm-12 mobile-col">
-      <img src="assets/img/pageaday-contest-tablet-1-2.png" class="project-image">
-    </div>
-    <div class="col-md-4 col-sm-12">
-      <img src="assets/img/pageaday-stationery-mobile-4-2.png" class="project-image mb-3">
-      <img src="assets/img/pageaday-newsletter-mobile-3-2.png" class="project-image">
+    <div class="col-md-4">
+      <figure class="project">
+        <img src="assets/img/DNS-godaddy-project.png" class="project-image">
+      </figure>
+      <figcaption class="project-title">
+        <h3 class="pt-0">DNS Management</h3>
+        <p class="project-skills">Netlify, GoDaddy</p>
+        <p>Maintained and performed transfers for clients' domains and DNS.</p>
+      </figcaption>
+      <ul>
+        <li><a href="">Read More</a></li>
+      </ul>
     </div>
   </div>
+</div>
 
   <div class="text-center  pt-5 pb-5">
     <p class="disclaimer">Some aspects of these website images have been replaced in compliance with non-disclosure agreements.</p>
