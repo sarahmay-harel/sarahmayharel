@@ -159,6 +159,14 @@ nav ul {
   font-weight: 600;
 }
 
+#title {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
 .current {
   color: darkolivegreen;
   text-decoration: underline wavy;

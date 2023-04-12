@@ -1,0 +1,91 @@
+<nav id="nav" class="navbar sticky-top px-5">
+    <div id="navRow">
+        {% if page.id == 'home' %}
+        <div>
+        <a href="/" id="title" class="title ">
+            <h1 style="font-size: 2em" class="mb-0">{{ "SarahMay Harel" }} <span
+                    class="leaves-emoji">&#127811;</span><span class="moon-emoji">&#127769;</span></h1>
+        </a>
+    </div>
+        {% else %}
+        <a href="/" class="title">
+            <h1 style="font-size: 2em" class="mb-0">{{ "SarahMay Harel" }} <span
+                    class="leaves-emoji">&#127811;</span><span class="moon-emoji">&#127769;</span></h1>
+            {% endif %}
+
+            <div class="navigation text-right">
+                <div class="d-block d-md-none">
+                    <button id="navToggle">
+                        <i id="fa-bars" class="fa-solid fa-bars"></i>
+                        <i id="fa-xmark" class="fa-solid fa-xmark d-none"></i>
+                    </button>
+                </div>
+
+                <div id="mobileNav" class="mobile-nav d-none">
+                    <ul>
+                        {% for item in site.data.navigation %}
+                        <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="{{ item.link }}" {%
+                                if page.url==item.link %}class="current" {% endif %}>
+                                {{ item.name | upcase }}
+                            </a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="d-none d-md-block">
+                    {% for item in site.data.navigation %}
+                    <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="{{ item.link }}" {% if
+                        page.url==item.link %}class="current" {% endif %}>
+                        {{ item.name | upcase }}
+                    </a> &nbsp;
+                    {% endfor %}
+                </div>
+            </div>
+    </div>
+</nav>
+
+<script>
+
+    //Adds wavy text underline to nav items when visited
+    function navDecoration() {
+        let hrefArray = document.getElementsByClassName("navItemJekyll")
+        let url = window.location.href
+
+        for (let i = 0; i < hrefArray.length; i++) {
+            if (hrefArray[i] == url) {
+                hrefArray[i].classList.add('current')
+            } else {
+                hrefArray[i].classList.remove('current')
+            }
+        }
+    }
+
+    navDecoration();
+
+    //Adds box shadow to nav when page is scrolled
+    window.addEventListener('scroll', function () {
+        var nav = document.getElementById("nav");
+        var title = document.getElementById("title");
+        if (pageYOffset > 10) {
+            nav.classList.add('shadow');
+            title.classList.add('show');
+        } else {
+            nav.classList.remove('shadow');
+            title.classList.remove('show');
+        }
+    })
+
+    //Display nav on toggle click
+
+    let navToggle = document.getElementById('navToggle');
+    let mobileNav = document.getElementById('mobileNav');
+    let faBars = document.getElementById('fa-bars');
+    let faXmark = document.getElementById('fa-xmark');
+    navToggle.addEventListener('click', function () {
+        mobileNav.classList.toggle('d-none');
+        faBars.classList.toggle('d-none');
+        faXmark.classList.toggle('d-none');
+    })
+
+
+</script>

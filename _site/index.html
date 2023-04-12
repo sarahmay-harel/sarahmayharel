@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - SarahMay Harel</title>
+    <title>SarahMay Harel</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/potted-plant-emoji-favicon.png">
@@ -15,65 +15,65 @@
   <body id="bodyID">
     <nav id="nav" class="navbar sticky-top px-5">
     <div id="navRow">
-        <div class="">
-            <!-- <a href="/sarahmayharel" class="text-left title"><h1 style="font-size: 1.3em">SARAHMAY</h1>
-            <h1 style="font-size: 1.3em;margin-left:80px;"">HAREL</h1></a> -->
+        
+        <div>
+        <a href="/" id="title" class="title ">
+            <h1 style="font-size: 2em" class="mb-0">SarahMay Harel <span
+                    class="leaves-emoji">&#127811;</span><span class="moon-emoji">&#127769;</span></h1>
+        </a>
+    </div>
+        
 
-            <a href="/" class="title d-block d-md-none">
-                <h1 style="font-size: 2em">SarahMay Harel <span class="leaves-emoji">&#127811;</span><span
-                        class="moon-emoji">&#127769;</span></h1>
-            </a>
-        </div>
-        <div class="navigation text-right">
-            <div class="d-block d-md-none">
-                <button id="navToggle">
-                    <i id="fa-bars" class="fa-solid fa-bars"></i>
-                    <i id="fa-xmark" class="fa-solid fa-xmark d-none"></i>
-                </button>
-            </div>
+            <div class="navigation text-right">
+                <div class="d-block d-md-none">
+                    <button id="navToggle">
+                        <i id="fa-bars" class="fa-solid fa-bars"></i>
+                        <i id="fa-xmark" class="fa-solid fa-xmark d-none"></i>
+                    </button>
+                </div>
 
-            <div id="mobileNav" class="mobile-nav d-none">
-                <ul>
-                    
-                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#about" >
-                            ABOUT
-                        </a></li>
-                    
-                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#resume" >
-                            RESUME
-                        </a></li>
-                    
-                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/projects.html" >
-                            PROJECTS
-                        </a></li>
-                    
-                    <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/contact.html" >
-                            CONTACT
-                        </a></li>
-                    
-                </ul>
-            </div>
+                <div id="mobileNav" class="mobile-nav d-none">
+                    <ul>
+                        
+                        <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#about" >
+                                ABOUT
+                            </a></li>
+                        
+                        <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#resume" >
+                                RESUME
+                            </a></li>
+                        
+                        <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/projects.html" >
+                                PROJECTS
+                            </a></li>
+                        
+                        <li><a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/contact.html" >
+                                CONTACT
+                            </a></li>
+                        
+                    </ul>
+                </div>
 
-            <div class="d-none d-md-block">
-                
-                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#about" >
-                    ABOUT
-                </a> &nbsp;
-                
-                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#resume" >
-                    RESUME
-                </a> &nbsp;
-                
-                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/projects.html" >
-                    PROJECTS
-                </a> &nbsp;
-                
-                <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/contact.html" >
-                    CONTACT
-                </a> &nbsp;
-                
+                <div class="d-none d-md-block">
+                    
+                    <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#about" >
+                        ABOUT
+                    </a> &nbsp;
+                    
+                    <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/#resume" >
+                        RESUME
+                    </a> &nbsp;
+                    
+                    <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/projects.html" >
+                        PROJECTS
+                    </a> &nbsp;
+                    
+                    <a onclick="setTimeout(navDecoration, 50)" class="navItemJekyll" href="/contact.html" >
+                        CONTACT
+                    </a> &nbsp;
+                    
+                </div>
             </div>
-        </div>
     </div>
 </nav>
 
@@ -98,10 +98,13 @@
     //Adds box shadow to nav when page is scrolled
     window.addEventListener('scroll', function () {
         var nav = document.getElementById("nav");
+        var title = document.getElementById("title");
         if (pageYOffset > 10) {
             nav.classList.add('shadow');
+            title.classList.add('show');
         } else {
             nav.classList.remove('shadow');
+            title.classList.remove('show');
         }
     })
 
