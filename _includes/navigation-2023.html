@@ -68,10 +68,10 @@
         var title = document.getElementById("title");
         if (pageYOffset > 10) {
             nav.classList.add('shadow');
-            title.classList.add('show');
+            title.style.opacity = '1';
         } else {
             nav.classList.remove('shadow');
-            title.classList.remove('show');
+            title.style.opacity = '0';
         }
     })
 

@@ -80,6 +80,7 @@ a:hover {
 nav {
   height: 5.5rem;
   background: oldlace;
+  transition: all 0.5s ease;
 }
 @media screen and (max-width: 740px) {
   nav a {
@@ -160,11 +161,8 @@ nav ul {
 }
 
 #title {
-  display: none;
-}
-
-.show {
-  display: block !important;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .current {
