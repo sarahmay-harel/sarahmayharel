@@ -124,21 +124,25 @@
     <div class="container projects">
   <div class="heading">
     <h2>Projects</h1>
-    <p class="mb-5 projects-intro">Welcome to my project portfolio! Below is a selection of my recent web development work, ranging from bespoke website templates for eCommerce businesses to data analytics and UX/UI development. Each project was tailored to meet the unique needs of my clients and designed with a focus on user experience, functionality, and scalability.</p>
+      <p class="mb-5 projects-intro">Welcome to my project portfolio! Below is a selection of my recent web development
+        work, ranging from bespoke website templates for eCommerce businesses to data analytics and UX/UI development.
+        Each project was tailored to meet the unique needs of my clients and designed with a focus on user experience,
+        functionality, and scalability.</p>
   </div>
-  <div class="row">
+  <div class="row mb-5">
     <div class="col-md-4">
       <figure class="project">
         <img src="assets/img/logos/Shopify-2.0-logo-project.png" class="project-image">
       </figure>
       <figcaption class="project-title">
-        <h3 class="pt-3">Shopify 2.0 Theme Architecture</h3>
+        <h3 class="pt-3">Shopify 2.0 Theme Development</h3>
         <p class="project-skills">Front End Development, Git</p>
-        <p>Refactored clients' existing Liquid templates to utilize new features introduced in the 2.0 architecture.</p>
+        <p>Refactored clients' existing Liquid templates to utilize new features introduced in the Online Store 2.0
+          architecture.</p>
       </figcaption>
-        <ul>
-          <li><a href="">Read More</a></li>
-        </ul>
+      <ul>
+        <li><a id="shopifyTheme" data-target="">Read More</a></li>
+      </ul>
     </div>
     <div class="col-md-4">
       <figure class="project">
@@ -160,7 +164,8 @@
       <figcaption class="project-title">
         <h3 class="pt-3">Data Analytics</h3>
         <p class="project-skills">Google Analytics, Data Visualization & Reporting</p>
-        <p>Developed data-driven presentations for C-level stakeholders illustrating the websites&rsquo; analytics to inform successful data-driven business decisions.</p>
+        <p>Developed data-driven presentations for C-level stakeholders illustrating website analytics to inform
+          successful data-driven business decisions.</p>
       </figcaption>
       <ul>
         <li><a href="">Read More</a></li>
@@ -189,7 +194,8 @@
       <figcaption class="project-title">
         <h3 class="pt-3">Portfolio Template</h3>
         <p class="project-skills">Front End Development, Jekyll, GitHub</p>
-        <p>Developed a custom portfolio website template using HTML, SCSS, and JavaScript. Jekyll generates a performant static site, and GitHub Pages offers scalability and security.</p>
+        <p>Developed a custom portfolio website template using HTML, SCSS, and JavaScript. Jekyll generates a performant
+          static site, and GitHub Pages offers scalability and security.</p>
       </figcaption>
       <ul>
         <li><a href="">Read More</a></li>
@@ -211,9 +217,56 @@
   </div>
 </div>
 
-  <div class="text-center  pt-5 pb-5">
-    <p class="disclaimer">Some aspects of these website images have been replaced in compliance with non-disclosure agreements.</p>
+<div class="text-center  pt-5 pb-5">
+  <p class="disclaimer">Some aspects of these website images have been replaced in compliance with non-disclosure
+    agreements.</p>
+</div>
+
+
+<!-- Shopify Theme Modal -->
+
+
+<div id="shopifyThemeModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="project-details">
+      <h3 class="pt-0">Shopify 2.0 Theme Development</h3>
+      <ul>
+        <li>Upgraded client eCommerce stores to Shopify Online Store 2.0 architecture.</li>
+        <li>Clients wanted to retain look and feel of heavily customized themes, but make use of features introduced in
+          2.0. I migrated original styles and functionality, and converted Liquid based page templates to JSON as needed
+        </li>
+      </ul>
+      <p><strong>Technologies:</strong> Liquid, JSON, JavaScript, JQuery, SCSS, Git, Shopify CLI, Shopify ThemeKit</p>
+    </div>
   </div>
+
+</div>
+
+
+<!-- Modals -->
+
+<script>
+
+  var modal = document.getElementById("shopifyThemeModal");
+  var btn = document.getElementById("shopifyTheme");
+  var span = document.getElementsByClassName("close")[0];
+  btn.onclick = function () {
+    modal.style.opacity = "1";
+  }
+  span.onclick = function () {
+    modal.style.opacity = "0";
+  }
+
+  window.addEventListener('click', function (event) {
+    if (event.target != modal && event.target != btn) {
+      modal.style.opacity = "0";
+    }
+  });
+
+</script>
     </main>
     <div class="shape" style="padding:0!important;">
       <div class="custom-shape-divider-top-1658328325">
