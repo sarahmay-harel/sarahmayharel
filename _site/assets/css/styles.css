@@ -248,6 +248,18 @@ button:hover {
 .dark-mode .leaves-emoji {
   display: none;
 }
+.dark-mode .modal-content {
+  background-color: #05263c;
+  border: 1px solid #05263c;
+  box-shadow: 0px 0px 5px 0px #8a8a8a;
+}
+.dark-mode .modal-content .close {
+  color: white;
+  opacity: 1;
+}
+.dark-mode .modal-content .close :hover {
+  color: #B2AAE4;
+}
 
 .dark-mode-checkbox {
   opacity: 0;
@@ -531,6 +543,10 @@ footer {
   justify-content: space-evenly;
   padding: 0;
 }
+.projects ul a, .projects ul a:not([href]):not([tabindex]) {
+  text-decoration: underline wavy;
+  text-underline-offset: 8px;
+}
 
 .project-skills {
   font-weight: 700;
@@ -663,13 +679,13 @@ footer {
 
 /* The Modal (background) */
 .modal {
-  opacity: 0;
+  opacity: 1;
   pointer-events: none;
   touch-action: none;
   display: block;
   position: fixed;
   z-index: 1;
-  padding-top: 40vh;
+  padding-top: 25vh;
   left: 0;
   top: 0;
   width: 100%;
@@ -688,8 +704,6 @@ footer {
   padding: 50px;
   border: 1px solid #888;
   width: 50%;
-  pointer-events: none;
-  touch-action: none;
   box-shadow: 2px 2px 11px 0px #44483d;
 }
 

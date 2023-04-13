@@ -24,7 +24,7 @@ title: Projects - SarahMay Harel
           architecture.</p>
       </figcaption>
       <ul>
-        <li><a id="shopifyTheme" data-target="">Read More</a></li>
+        <li><a id="shopifyTheme" class="preventDefault" data-target="">Read More</a></li>
       </ul>
     </div>
     <div class="col-md-4">
@@ -37,7 +37,7 @@ title: Projects - SarahMay Harel
         <p>Designed and built custom templates for an independent book publisher's eCommerce store.</p>
       </figcaption>
       <ul>
-        <li><a href="">Read More</a></li>
+        <li><a id="shopifyTemplates" class="preventDefault" data-target="">Read More</a></li>
       </ul>
     </div>
     <div class="col-md-4">
@@ -51,7 +51,7 @@ title: Projects - SarahMay Harel
           successful data-driven business decisions.</p>
       </figcaption>
       <ul>
-        <li><a href="">Read More</a></li>
+        <li><a id="dataAnalytics" class="preventDefault" data-target="">Read More</a></li>
       </ul>
     </div>
 
@@ -67,7 +67,7 @@ title: Projects - SarahMay Harel
         <p>Designed and built custom templates for an independent book publisher's eCommerce store.</p>
       </figcaption>
       <ul>
-        <li><a href="">Read More</a></li>
+        <li><a id="websiteRedesign" href="" class="preventDefault">Read More</a></li>
       </ul>
     </div>
     <div class="col-md-4">
@@ -81,7 +81,7 @@ title: Projects - SarahMay Harel
           static site, and GitHub Pages offers scalability and security.</p>
       </figcaption>
       <ul>
-        <li><a href="">Read More</a></li>
+        <li><a id="portfolioTemplate" class="preventDefault" data-target="">Read More</a></li>
       </ul>
     </div>
     <div class="col-md-4">
@@ -94,7 +94,7 @@ title: Projects - SarahMay Harel
         <p>Maintained and performed transfers for clients' domains and DNS.</p>
       </figcaption>
       <ul>
-        <li><a href="">Read More</a></li>
+        <li><a id="dnsManagement" class="preventDefault" data-target="">Read More</a></li>
       </ul>
     </div>
   </div>
@@ -106,47 +106,96 @@ title: Projects - SarahMay Harel
 </div>
 
 
-<!-- Shopify Theme Modal -->
-
-
-<div id="shopifyThemeModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <div class="project-details">
-      <h3 class="pt-0">Shopify 2.0 Theme Development</h3>
-      <ul>
-        <li>Upgraded client eCommerce stores to Shopify Online Store 2.0 architecture.</li>
-        <li>Clients wanted to retain look and feel of heavily customized themes, but make use of features introduced in
-          2.0. I migrated original styles and functionality, and converted Liquid based page templates to JSON as needed
-        </li>
-      </ul>
-      <p><strong>Technologies:</strong> Liquid, JSON, JavaScript, JQuery, SCSS, Git, Shopify CLI, Shopify ThemeKit</p>
-    </div>
-  </div>
-
-</div>
-
-
-<!-- Modals -->
-
 <script>
+  // Get all modal buttons
+  const btn1 = document.getElementById("shopifyTheme");
+  const btn2 = document.getElementById('shopifyTemplates');
+  const btn3 = document.getElementById('dataAnalytics');
+  const btn4 = document.getElementById('websiteRedesign');
+  const btn5 = document.getElementById('portfolioTemplate');
+  const btn6 = document.getElementById('dnsManagement');
 
-  var modal = document.getElementById("shopifyThemeModal");
-  var btn = document.getElementById("shopifyTheme");
-  var span = document.getElementsByClassName("close")[0];
-  btn.onclick = function () {
-    modal.style.opacity = "1";
+  // Prevent page reload on modal link click
+  const preventDefaultElements = document.querySelectorAll('.preventDefault');
+  preventDefaultElements.forEach(function (element) {
+    element.addEventListener('click', function (event) {
+      event.preventDefault();
+    });
+  });
+
+  // ChatGPT Modal
+  function createModal(content) {
+    const modal = document.createElement('div');
+    modal.classList.add('modal');
+    modal.innerHTML = `
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      ${content}
+    </div>
+  `;
+    const closeBtn = modal.querySelector('.close');
+    const modalContent = modal.querySelector('.modal-content');
+    closeBtn.addEventListener('click', () => {
+      modal.style.opacity = 0;
+      modalContent.style.pointerEvents = 'none';
+      modalContent.style.touchAction = 'none';
+    });
+    return modal;
   }
-  span.onclick = function () {
-    modal.style.opacity = "0";
-  }
+
+
+  // Create modals on button click
+  btn1.addEventListener('click', () => {
+    const modalContent = '<div class="project-details"><h3 class="pt-0">Shopify 2.0 Theme Development</h3><p><strong>Technologies:</strong> Liquid, JSON, JavaScript, JQuery, SCSS, Git, Shopify CLI, Shopify ThemeKit</p><ul><li>Upgraded client eCommerce stores to Shopify Online Store 2.0 architecture.</li><li>Clients wanted to retain look and feel of heavily customized themes, but make use of features introduced in 2.0. I migrated original styles and functionality, and converted Liquid based page templates to JSON as needed</li></ul></div>';
+    const modal = createModal(modalContent);
+    document.body.appendChild(modal);
+  });
+
+  btn2.addEventListener('click', () => {
+    const modalContent = '<div class="project-details"><h3 class="pt-0">Shopify Templates</h3><p><strong>Technologies:</strong> Liquid, JavaScript, Shopify Plus</p><ul><li>Implemented calculator script that shows &ldquo;You are $__ away from free shipping&rdquo; + Continue Shopping link. This feature increased average order value by 15%.</li><li>Advocated for and ultimately implemented language cautioning customers about shipping delays, and deterring the use of P.O. box addresses during the height of eCommerce season. This feature reduced customer complaints by close to 20%, and saved an average of $1,400 in shipping costs.</li><li>Implemented &ldquo;Gift Messaging&rdquo; text input area for customers sending orders as gifts for the holidays.</li><li>Collaborated with 3rd party developers to implement &ldquo;Similar Products&rdquo; in cart promoting upsells and increasing average order value.</li></ul></div>';
+    const modal = createModal(modalContent);
+    document.body.appendChild(modal);
+  });
+
+  btn3.addEventListener('click', () => {
+    const modalContent = '<div class="project-details"><h3 class="pt-0">Data Analytics</h3><p><strong>Technologies:</strong> Shopify Analytics, Google Analytics</p><ul><li>Evaluated growth and potential opportunities for our eCommerce business using data from Google Analytics.</li><li>Developed presentations for C-level stakeholders to communicate the current and potential future state of business, identifying key consumer touchpoints, what the business is succeeding at, and areas of opportunity to grow.</li><li>Created graphs, charts, and made unbiased interpretations illustrating the websites&rsquo; analytics reporting in a way that it could easily inform successful data-driven business decisions.</li></ul></div>';
+    const modal = createModal(modalContent);
+    document.body.appendChild(modal);
+  });
+
+  btn4.addEventListener('click', () => {
+    const modalContent = '<div class="project-details"><h3 class="pt-0">eCommerce Website Redesign</h3><p><strong>Technologies:</strong> Shopify, InVision, Figma, Basecamp</p><ul><li>Created RFP for redesign and relaunch of the website, with the goal of UX/UI designed to increase conversions. Direct-to-Consumer sales, newsletter signups, User-Generated Content</li><li>Iterated through user journeys and consumer touchpoints, created wireframes and visual representations for mobile, tablet, desktop.</li><li>Developed information architecture to emphasize eCommerce focus.</li><li>Worked closely with developers on iterations and code implementation.</li><li>Implemented Basecamp as a documentation and project management tool.</li><li>Coordinated between developers and C-level stakeholders to ensure project deliverables met expectations.</li></ul></div>';
+    const modal = createModal(modalContent);
+    document.body.appendChild(modal);
+  });
+
+  btn5.addEventListener('click', () => {
+    const modalContent = '<div class="project-details"><h3 class="pt-0">Portfolio Template</h3><p><strong>Technologies:</strong> JavaScript, Jekyll, Git, GitHub, Bootstrap</p><ul><li>Handcoded personal portfolio website using HTML, SCSS, and JavaScript, and built with Jekyll and GitHub Pages.</li><li>Maintained version control across multiple iterations using git.</li><li>Designed site appearance and structure, built custom SVGs, and implemented Dark Mode functionality.</li><li>One of my favorite projects so far! The client was very flexible to my design choices, and I got to learn a ton about Jekyll, git, and CSS.</li></ul></div>';
+    const modal = createModal(modalContent);
+    document.body.appendChild(modal);
+  });
+
+  btn6.addEventListener('click', () => {
+    const modalContent = '<div class="project-details"><h3 class="pt-0">DNS Management</h3><p><strong>Technologies:</strong> GoDaddy, Netlify, WordPress</p><ul><li>Managed transition of client websites from privately owned repositories and nameservers to client&apos;s repositories and nameservers</li><li> Required knowledge of GoDaddy, Netlify, GitHub, and DNS best practices</li></ul></div>';
+    const modal = createModal(modalContent);
+    document.body.appendChild(modal);
+  });
 
   window.addEventListener('click', function (event) {
-    if (event.target != modal && event.target != btn) {
-      modal.style.opacity = "0";
+    const modal = document.querySelector('.modal');
+    const btn = document.querySelector('.preventDefault');
+    const innerHTML = document.querySelector('.modal-content');
+    if (event.target == modal) {
+      console.log(event.target)
+      modal.style.opacity = 0;
     }
   });
+
+
+  // TODO
+// Add modal to all project images
+// Refactor modals to use opacity instead of display, add transition
+// Hide modal on click outside of modal
+
 
 </script>

@@ -316,6 +316,19 @@ button:hover {
     .leaves-emoji {
         display: none;
     }
+
+    .modal-content {
+        background-color: #05263c;
+        border: 1px solid #05263c;
+        box-shadow: 0px 0px 5px 0px #8a8a8a;
+        .close {
+            color: white;
+            opacity: 1;
+            :hover {
+                color: #B2AAE4;
+            }
+        }
+    }
 }
 
 .dark-mode-checkbox {
@@ -615,6 +628,11 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 0;
+
+    a, a:not([href]):not([tabindex]) {
+        text-decoration: underline wavy;
+        text-underline-offset: 8px;
+    }
 }
 
 .project-skills {
@@ -758,13 +776,13 @@ footer {
 
 /* The Modal (background) */
 .modal {
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
     touch-action: none;
     display: block;
     position: fixed;
     z-index: 1;
-    padding-top: 40vh;
+    padding-top: 25vh;
     left: 0;
     top: 0;
     width: 100%;
@@ -775,8 +793,8 @@ footer {
     transform: scale(1);
 
     transition:
-      transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
-      opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+        transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946),
+        opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 }
 
 
@@ -787,8 +805,8 @@ footer {
     padding: 50px;
     border: 1px solid #888;
     width: 50%;
-    pointer-events: none;
-    touch-action: none;
+    // pointer-events: none;
+    // touch-action: none;
     box-shadow: 2px 2px 11px 0px #44483d;
 }
 
@@ -797,6 +815,7 @@ footer {
         width: 90%;
         padding: 30px;
     }
+
     .modal {
         padding-top: 15vh;
     }
