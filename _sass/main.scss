@@ -321,9 +321,11 @@ button:hover {
         background-color: #05263c;
         border: 1px solid #05263c;
         box-shadow: 0px 0px 5px 0px #8a8a8a;
+
         .close {
             color: white;
             opacity: 1;
+
             :hover {
                 color: #B2AAE4;
             }
@@ -629,7 +631,8 @@ footer {
     justify-content: space-evenly;
     padding: 0;
 
-    a, a:not([href]):not([tabindex]) {
+    a,
+    a:not([href]):not([tabindex]) {
         text-decoration: underline wavy;
         text-underline-offset: 8px;
     }
@@ -803,7 +806,7 @@ footer {
     background-color: oldlace;
     margin: auto;
     padding: 50px;
-    border: 1px solid #888;
+    // border: 1px solid #888;
     width: 50%;
     // pointer-events: none;
     // touch-action: none;
@@ -812,12 +815,24 @@ footer {
 
 @media screen and (max-width: 767px) {
     .modal-content {
-        width: 90%;
+        width: 101%;
         padding: 30px;
+        height: 101vh;
+        overflow-y: auto;
+        margin-left: -.04rem;
     }
 
     .modal {
-        padding-top: 15vh;
+        padding-top: 0vh;
+        z-index: 10000;
+    }
+
+    .projects ul {
+        padding-bottom: 3rem;
+    }
+
+    figcaption {
+        padding-left: 2rem;
     }
 }
 
