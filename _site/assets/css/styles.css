@@ -80,7 +80,7 @@ a:hover {
 nav {
   height: 5.5rem;
   background: oldlace;
-  transition: all 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 @media screen and (max-width: 740px) {
   nav a {
@@ -125,7 +125,7 @@ nav ul {
 }
 
 #mobileNav {
-  transition: all 0.3s linear;
+  transition: opacity 0.3s linear;
 }
 
 .mobile-nav {
