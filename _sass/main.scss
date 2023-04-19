@@ -229,10 +229,12 @@ button {
     font-size: 16px;
     border-radius: 20%;
     z-index: 1;
+    transition: all 0.3s ease;
 }
 
 
 button:hover {
+    transform: scale(1.2);
     background: #3f5b0e;
     color: oldlace;
 }
@@ -277,6 +279,7 @@ button:hover {
 
     button {
         background-color: #7768ce !important;
+        
     }
 
     button:hover {
@@ -557,31 +560,63 @@ button:hover {
 
 
 /*Footer*/
-footer a {
-    color: #201901;
-    text-decoration: none;
-    font-weight: 600;
+footer {
+    .row {
+        align-items: center;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    a {
+        color: #201901;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    a:hover {
+        color: #201901;
+        text-decoration: underline wavy;
+        text-underline-offset: 5px;
+    }
+    .current {
+        color: #201901;
+        text-decoration: underline wavy;
+        text-underline-offset: 5px;
+    }
 }
 
-footer a:hover {
-    color: #201901;
-    text-decoration: underline wavy;
-    text-underline-offset: 5px;
+// Testing grid
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 0;
+    max-width: 200px;
+    margin: 0 auto;
 }
 
-footer .current {
-    color: #201901;
-    text-decoration: underline wavy;
-    text-underline-offset: 5px;
+.grid-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.tiny {
-    max-width: 10%;
+.grid-container a:hover img {
+    transform: scale(1.2);
 }
 
-.dark-mode .tiny {
+.grid-container img {
+    max-width: 60%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.dark-mode .grid-container img {
     filter: contrast(0);
 }
+
+// End grid
+
+
+
 
 .no-bullet {
     list-style-type: none;
